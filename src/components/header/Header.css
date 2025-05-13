@@ -19,6 +19,7 @@ header {
     padding: 30px 100px;
 }
 
+
 /* Logo Marca */
 .logo {
     display: flex;
@@ -27,6 +28,7 @@ header {
     font-size: 26px;
     cursor: pointer;
 }
+
 
 /* Circulo Logo*/
 .outer-circle {
@@ -48,7 +50,8 @@ header {
     border-radius: 100%;
 }
 
-/* Links de Navegação */
+
+/* Container de Links */
 .nav-contents {
     display: flex;
     flex-direction: row;
@@ -70,6 +73,7 @@ header {
     }
 }
 
+
 /* Botão de Login */
 .login {
     display: flex;
@@ -90,12 +94,14 @@ header {
     border-radius: 100%;
 }
 
-/* Sacola de Compras*/
+
+/* Sacola de Compras */
 .fa-bag-shopping {
     font-size: 24px;
 }
 
-/* Butão de Compra */
+
+/* Butão de Comprar */
 .buy-button {
     padding: 10px 25px;
     border-radius: 25px;
@@ -104,10 +110,97 @@ header {
     filter: drop-shadow(1px 1px 7px var(--bg-color-2));
     cursor: pointer;
 }
-
 .buy-button:hover {
     background-color: var(--bg-color-3);
     color: var(--color-3);
     filter: drop-shadow(1px 1px 8px var(--bg-color-3));
     transition: 0.5s ease;
+}
+
+
+/* Container de Navegação Responsive */
+.nav-responsive {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color-5);
+}
+
+
+/* Container de Login */
+.nav-responsive .login-content {
+    display: flex;
+    width: 100%;
+    margin: 25px 0 75px 5px;
+}
+
+/* Ícone de Usuário */
+.nav-responsive .login-content i {
+    margin-left: 0;
+}
+
+
+/* FAQ Responsivo */
+.nav-responsive .faq {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+
+/* Menu Hamburguer */
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+}
+
+/* Barras */
+.bar1, .bar2, .bar3 {
+    width: 2rem;
+    height: 0.15rem;
+    background-color: var(--bg-color-3);
+    margin: 0.4rem 0;
+    transition: 0.3s ease;
+}
+
+.change .bar1 {
+    transform: translate(0, 0.545rem) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -0.545rem) rotate(45deg);
+}
+
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 20px;
+    }
+
+    .nav-contents .faq, .nav-contents .login, .nav-contents .buy-button {
+        display: none;
+    }
+    
+    .nav-contents .bag {
+        margin-right: 55px;
+    }
+
+    .nav-contents .bag i {
+        font-size: 32px;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
 }
