@@ -8,7 +8,9 @@ header {
     background-color: var(--bg-color-1);
     filter: drop-shadow(1px 1px 10px var(--bg-color-4));
     z-index: 1;
+    user-select: none;
 }
+
 
 .nav-container {
     display: flex;
@@ -27,7 +29,7 @@ header {
     align-items: center;
     font-size: 26px;
     cursor: pointer;
-    color: var(--color-2)
+    color: var(--color-2);
 }
 
 
@@ -63,6 +65,7 @@ header {
     margin: 0 15px;
     font-size: 16px;
     cursor: pointer;
+    color: var(--color-2);
 }
 
 .faq:hover, .login:hover, .bag:hover, .buy-button:hover{

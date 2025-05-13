@@ -19,12 +19,12 @@ export function Header() {
     return (
         <header>
             <nav className="nav-container">
-                <div href="./index.html" className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></div>
+                <div className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></div>
                 <div className="nav-contents">
-                    <a className="faq"><span>FAQ</span></a>
-                    <a className="login"><i className="fa-solid fa-user"></i><span>Login</span></a>
-                    <a className="bag"><i className="fa-solid fa-bag-shopping"></i></a>
-                    <a href="./index.html" className="buy-button">Comprar agora</a>
+                    <div className="faq"><span>FAQ</span></div>
+                    <div className="login"><i className="fa-solid fa-user"></i><span>Login</span></div>
+                    <div className="bag"><i className="fa-solid fa-bag-shopping"></i></div>
+                    <div href="./index.html" className="buy-button">Comprar agora</div>
                     <div className="menu-hamburguer">
                         <div className="bar1"></div>
                         <div className="bar2"></div>
@@ -35,10 +35,10 @@ export function Header() {
 
             <div className="nav-responsive">
                 <div className="login-content">
-                    <a className="login"><i className="fa-solid fa-user"></i><span>Login</span></a>
+                    <div className="login"><i className="fa-solid fa-user"></i><span>Login</span></div>
                 </div>
-                <a className="faq"><span>FAQ</span></a>
-                <a href="./index.html" className="buy-button">Comprar agora</a>
+                <div className="faq"><span>FAQ</span></div>
+                <div href="./index.html" className="buy-button">Comprar agora</div>
             </div>
         </header>
     )
