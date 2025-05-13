@@ -1,0 +1,113 @@
+/* Cabeçalho de Navegação */
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: transparent;
+    position: fixed;
+    background-color: var(--bg-color-1);
+    filter: drop-shadow(1px 1px 10px var(--bg-color-4));
+    z-index: 1;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 100px;
+}
+
+/* Logo Marca */
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Circulo Logo*/
+.outer-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid var(--color-2);
+    margin-right: 8px;
+}
+
+.inner-circle {
+    width: 14px;
+    height: 14px;
+    background-color:var(--bg-color-3);
+    border-radius: 100%;
+}
+
+/* Links de Navegação */
+.nav-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.faq, .login, .bag, .buy-button {
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq:hover, .login:hover, .bag:hover, .buy-button:hover{
+    color: var(--color-3);
+    transition: 0.5s ease;
+    .fa-user {
+        background-color: var(--bg-color-2);
+        transition: 0.5s ease;
+    }
+}
+
+/* Botão de Login */
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ícone de Usuário */
+.login i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    background-color: var(--bg-color-3);
+    color: var(--color-1);
+    border-radius: 100%;
+}
+
+/* Sacola de Compras*/
+.fa-bag-shopping {
+    font-size: 24px;
+}
+
+/* Butão de Compra */
+.buy-button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: var(--bg-color-2);
+    color: var(--color-2);
+    filter: drop-shadow(1px 1px 7px var(--bg-color-2));
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: var(--bg-color-3);
+    color: var(--color-3);
+    filter: drop-shadow(1px 1px 8px var(--bg-color-3));
+    transition: 0.5s ease;
+}
