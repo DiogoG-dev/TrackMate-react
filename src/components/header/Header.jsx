@@ -7,8 +7,7 @@ export function Header() {
         const menuHamburguer = document.querySelector('.menu-hamburguer');
 
         menuHamburguer.classList.toggle('change');
-
-        navResponsive.style.display = menuHamburguer.classList.contains('change') ? 'flex' : 'none';
+        navResponsive.classList.toggle('show');
     }
 
     useEffect(() => {
@@ -20,7 +19,7 @@ export function Header() {
     return (
         <header>
             <nav className="nav-container">
-                <a href="./index.html" className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></a>
+                <div href="./index.html" className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></div>
                 <div className="nav-contents">
                     <a className="faq"><span>FAQ</span></a>
                     <a className="login"><i className="fa-solid fa-user"></i><span>Login</span></a>
