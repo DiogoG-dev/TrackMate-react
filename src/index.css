@@ -25,6 +25,7 @@
   padding: 0;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
+  color: var(--color-2);
   a {
     text-decoration: none;
     color: var(--color-2);

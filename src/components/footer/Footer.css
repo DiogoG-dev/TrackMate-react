@@ -1,0 +1,113 @@
+/* Rodapé da Página */
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/imgs/backgrounds/footer.avif');
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    user-select: none;
+}
+
+/* Links Container */
+footer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 78%;
+}
+
+/* Links de Redes Sociais e Informações Legais */
+.social-media .list-media, .legal-information .list-legal {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-media li {
+    list-style: none;
+    font-size: 14px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.list-media li a {
+    text-decoration: underline;
+}
+
+.list-legal li {
+    list-style: none;
+    font-size: 14px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+/* Barra Horizontal de Divisão */
+hr {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid var(--color-2);
+    margin: 50px 0 25px 0;
+}
+
+/* Container de Direitos e Bandeiras */
+footer .rights-flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 78%;
+}
+
+/* Direitos */
+.rights-flags .rights {
+    font-size: 14px;
+}
+
+.rights a {
+    text-decoration: underline;
+}
+
+/* Bandeiras */
+.rights-flags .flags img {
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 75px 0 25px 0;
+    }
+
+    .social-media .list-media, .legal-information .list-legal {
+        flex-direction: column;
+    }
+
+    .list-media li, .list-legal li {
+        margin-bottom: 10px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    footer .rights-flags {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        width: 85%;
+    }
+
+    .flags img {
+        width: 50px;
+    }
+
+    .rights-flags .rights {
+        margin-top: 25px;
+        text-align: center;
+    }
+}

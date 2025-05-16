@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     host: true
   },
-  base: 'TrackMate-react',
+  base: '/TrackMate-react/', // Obrigatório para hospedar no github
 })
