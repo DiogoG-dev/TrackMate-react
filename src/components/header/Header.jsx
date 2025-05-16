@@ -1,14 +1,10 @@
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './Header.css'
+import { useNavigation } from '../../contexts/NavigationContext';
 
 export function Header() {
     // Navegação
-    const navigate = useNavigate();
-
-    function navigateTo(path) {
-        navigate(path === 'home' ? '/' : `/${path}`)
-    }
+    const { navigateTo } = useNavigation()
 
     // Lida com o comportamento do Menu e Navegação Mobile
     function toggleMenu() {
@@ -32,10 +28,10 @@ export function Header() {
             <nav className="nav-container">
                 <div onClick={() => navigateTo('home')} className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></div>
                 <div className="nav-contents">
-                    <div onClick={() => navigateTo('undefined')} className="faq"><span>FAQ</span></div>
-                    <div onClick={() => navigateTo('undefined')} className="login"><i className="fa-solid fa-user"></i><span>Login</span></div>
-                    <div onClick={() => navigateTo('undefined')} className="bag"><i className="fa-solid fa-bag-shopping"></i></div>
-                    <div onClick={() => navigateTo('undefined')} className="buy-button">Comprar agora</div>
+                    <div onClick={() => navigateTo('pageNotFound')} className="faq"><span>FAQ</span></div>
+                    <div onClick={() => navigateTo('pageNotFound')} className="login"><i className="fa-solid fa-user"></i><span>Login</span></div>
+                    <div onClick={() => navigateTo('pageNotFound')} className="bag"><i className="fa-solid fa-bag-shopping"></i></div>
+                    <div onClick={() => navigateTo('pageNotFound')} className="buy-button">Comprar agora</div>
                     <div className="menu-hamburguer">
                         <div className="bar1"></div>
                         <div className="bar2"></div>
@@ -46,10 +42,10 @@ export function Header() {
 
             <div className="nav-responsive">
                 <div className="login-content">
-                    <div onClick={() => navigateTo('undefined')} className="login"><i className="fa-solid fa-user"></i><span>Login</span></div>
+                    <div onClick={() => navigateTo('pageNotFound')} className="login"><i className="fa-solid fa-user"></i><span>Login</span></div>
                 </div>
-                <div onClick={() => navigateTo('undefined')} className="faq"><span>FAQ</span></div>
-                <div onClick={() => navigateTo('undefined')} className="buy-button">Comprar agora</div>
+                <div onClick={() => navigateTo('pageNotFound')} className="faq"><span>FAQ</span></div>
+                <div onClick={() => navigateTo('pageNotFound')} className="buy-button">Comprar agora</div>
             </div>
         </header>
     )
