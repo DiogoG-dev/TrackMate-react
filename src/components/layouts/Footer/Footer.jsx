@@ -26,12 +26,12 @@ export function Footer() {
             <div className="rights-flags">
                 <p className="rights">© 2025 por Diogo Gabriel. Inspirado no <a href="https://pt.wix.com/website-template/view/html/2964" target="_blank" rel="noopener noreferrer">TrackMate</a> da Wix.com</p>
                 <div className="flags">
-                    <img src="/TrackMate-react/imgs/flags/visa.avif" alt="visa" />
-                    <img src="/TrackMate-react/imgs/flags/mastercard.avif" alt="mastercard" />
-                    <img src="/TrackMate-react/imgs/flags/chinaunionpay.avif" alt="chinaunionpay" />
-                    <img src="/TrackMate-react/imgs/flags/jcb.avif" alt="jcb" />
+                    <img src="/TrackMate-react/imgs/flags/visa.png" alt="visa" />
+                    <img src="/TrackMate-react/imgs/flags/mastercard.png" alt="mastercard" />
+                    <img src="/TrackMate-react/imgs/flags/unionpay.png" alt="chinaunionpay" />
+                    <img src="/TrackMate-react/imgs/flags/jcb.png" alt="jcb" />
                     <img src="/TrackMate-react/imgs/flags/amex.png" alt="amex" />
-                    <img src="/TrackMate-react/imgs/flags/discover.avif" alt="discover" />
+                    <img src="/TrackMate-react/imgs/flags/discover.png" alt="discover" />
                     <img src="/TrackMate-react/imgs/flags/diners.png" alt="diners" />
                     <img src="/TrackMate-react/imgs/flags/paypal.png" alt="paypal" />
                 </div>
