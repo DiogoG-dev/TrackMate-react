@@ -1,7 +1,7 @@
+import './Header.css';
 import { useEffect } from 'react';
-import './Header.css'
 import { Link } from 'react-router-dom';
-import { BuyButton } from '../buyButton/BuyButton';
+import { BuyButton } from '../common/BuyButton/BuyButton';
 
 export function Header() {
     // Lida com o comportamento do Menu e Navegação Mobile

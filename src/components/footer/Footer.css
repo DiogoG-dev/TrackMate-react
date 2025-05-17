@@ -77,6 +77,8 @@ footer .rights-flags {
     margin-left: 15px;
 }
 
+
+/* Responsividade Mobile */
 @media (max-width: 768px) {
     footer {
         padding: 75px 0 25px 0;

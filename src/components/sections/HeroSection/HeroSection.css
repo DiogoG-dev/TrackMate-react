@@ -54,8 +54,9 @@
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
-        justify-content: start;
-        padding: 110px 0 0 0;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 0 0;
     }
 
     .product-presentation {
