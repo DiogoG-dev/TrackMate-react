@@ -1,0 +1,51 @@
+/* Primeira Seção da Página */
+/* TrackMade 0.4 XE */
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    height: 110vh;
+    background-image: url('/TrackMate-react/imgs/backgrounds/mainBg.avif');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Container de Conteúdos*/
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 75px 75px 0 75px;
+}
+
+/* Conteúdos da Seção*/
+.product-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.product-presentation .hero-text, .product-presentation .hero-secondary-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.product-presentation .hero-main-title {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+/* Butão de Compra */
+.product-presentation .buy-button {
+    margin: 25px 0 0 0;
+}
+
+/* Imagem do Produto */
+.product-image {
+    width: 548px;
+    height: 540px;
+    background-image: url('/TrackMate-react/imgs/folds/newFirstFold.avif');
+    transform: rotate(-10deg);
+}
