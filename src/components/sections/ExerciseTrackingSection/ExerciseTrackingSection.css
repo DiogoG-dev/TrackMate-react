@@ -82,3 +82,61 @@
     position: absolute;
     right: 15%;
 }
+
+
+@media (max-width: 768px) {
+    .exercise-tracking-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 30px;
+        height: 100vh;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .exercise-tracking-content {
+        background: url('/TrackMate-react/imgs/backgrounds/female-athlete-before-run.avif');
+        background-size: cover;
+        background-position: 45%;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .exercise-tracking-content h2 {
+        flex-direction: column;
+        align-items: start;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-left: 30px;
+    }
+
+    .exercise-tracking-content h2 i {
+        width: 47px;
+        height: 47px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .exercise-tracking-content h3 {
+        font-size: 28px;
+        font-weight: 500;
+        width: 250px;
+        line-height: 1;
+        margin: 15px 0 0 30px;
+    }
+
+    .exercise-tracking-content p {
+        font-size: 16px;
+        font-weight: 400;
+        width: 250px;
+        line-height: 1.5;
+        margin-left: 30px;
+    }
+
+    /**/
+    .gradient-background-product {
+        background: url('/TrackMate-react/imgs/backgrounds/mainBgReverse.avif');
+        background-position: 30%;
+    }
+}
