@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './Header.css'
 import { Link } from 'react-router-dom';
+import { BuyButton } from '../buyButton/BuyButton';
 
 export function Header() {
     // Lida com o comportamento do Menu e Navegação Mobile
@@ -42,7 +43,7 @@ export function Header() {
                     <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i><span>Login</span></Link>
                 </div>
                 <Link to={'pageNotFound'} className="faq"><span>FAQ</span></Link>
-                <Link to={'pageNotFound'} className="buy-button">Comprar agora</Link>
+                <BuyButton />
             </div>
         </header>
     )
