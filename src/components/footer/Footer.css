@@ -5,12 +5,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('/imgs/backgrounds/footer.avif');
+    background-image: url('/TrackMate-react/imgs/backgrounds/footer.avif');
     background-position: center center;
     background-size: cover;
     padding: 100px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     user-select: none;
 }

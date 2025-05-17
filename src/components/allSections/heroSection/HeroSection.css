@@ -44,8 +44,44 @@
 
 /* Imagem do Produto */
 .product-image {
-    width: 548px;
-    height: 540px;
-    background-image: url('/TrackMate-react/imgs/folds/newFirstFold.avif');
+    width: 550px;
+    height: 542px;
     transform: rotate(-10deg);
+}
+
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        justify-content: start;
+        padding: 110px 0 0 0;
+    }
+
+    .product-presentation {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 105px;
+    }
+
+    .product-presentation .hero-text, .product-presentation .hero-secondary-title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .product-presentation .hero-main-title {
+        text-align: center;
+        font-size: 38px;
+        margin: 10px 0;
+    }
+
+    .product-presentation .buy-button {
+        font-size: 20px;
+    }
+
+    .product-image {
+        width: 350px;
+        height: 345px;
+        transform: rotate(0);
+    }
 }
