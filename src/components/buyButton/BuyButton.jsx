@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import './BuyButton.css';
+import { Link } from 'react-router-dom';
 
 export function BuyButton() {
     return (
