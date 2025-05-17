@@ -1,11 +1,8 @@
 import { useEffect } from 'react';
 import './Header.css'
-import { useNavigation } from '../../contexts/NavigationContext';
+import { Link } from 'react-router-dom';
 
 export function Header() {
-    // Navegação
-    const { navigateTo } = useNavigation()
-
     // Lida com o comportamento do Menu e Navegação Mobile
     function toggleMenu() {
         const navResponsive = document.querySelector('.nav-responsive');
@@ -26,12 +23,12 @@ export function Header() {
     return (
         <header>
             <nav className="nav-container">
-                <div onClick={() => navigateTo('home')} className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></div>
+                <Link to={'/'} className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></Link>
                 <div className="nav-contents">
-                    <div onClick={() => navigateTo('pageNotFound')} className="faq"><span>FAQ</span></div>
-                    <div onClick={() => navigateTo('pageNotFound')} className="login"><i className="fa-solid fa-user"></i><span>Login</span></div>
-                    <div onClick={() => navigateTo('pageNotFound')} className="bag"><i className="fa-solid fa-bag-shopping"></i></div>
-                    <div onClick={() => navigateTo('pageNotFound')} className="buy-button">Comprar agora</div>
+                    <Link to={'pageNotFound'} className="faq"><span>FAQ</span></Link>
+                    <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i><span>Login</span></Link>
+                    <Link to={'pageNotFound'} className="bag"><i className="fa-solid fa-bag-shopping"></i></Link>
+                    <Link to={'pageNotFound'} className="buy-button">Comprar agora</Link>
                     <div className="menu-hamburguer">
                         <div className="bar1"></div>
                         <div className="bar2"></div>
@@ -42,10 +39,10 @@ export function Header() {
 
             <div className="nav-responsive">
                 <div className="login-content">
-                    <div onClick={() => navigateTo('pageNotFound')} className="login"><i className="fa-solid fa-user"></i><span>Login</span></div>
+                    <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i><span>Login</span></Link>
                 </div>
-                <div onClick={() => navigateTo('pageNotFound')} className="faq"><span>FAQ</span></div>
-                <div onClick={() => navigateTo('pageNotFound')} className="buy-button">Comprar agora</div>
+                <Link to={'pageNotFound'} className="faq"><span>FAQ</span></Link>
+                <Link to={'pageNotFound'} className="buy-button">Comprar agora</Link>
             </div>
         </header>
     )

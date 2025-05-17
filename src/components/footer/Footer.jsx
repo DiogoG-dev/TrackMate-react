@@ -1,8 +1,7 @@
 import './Footer.css'
-import { useNavigation } from '../../contexts/NavigationContext';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
-    const { navigateTo } = useNavigation()
     return (
         <footer>
             <div className="links">
@@ -16,10 +15,10 @@ export function Footer() {
                 </div>
                 <div className="legal-information">
                     <ul className="list-legal">
-                        <li onClick={() => navigateTo('pageNotFound')}>Política de Cookies</li>
-                        <li onClick={() => navigateTo('pageNotFound')}>Termos e Condições</li>
-                        <li onClick={() => navigateTo('pageNotFound')}>Entregas e Devoluções</li>
-                        <li onClick={() => navigateTo('pageNotFound')}>Política de Privacidade</li>
+                        <li><Link to={'pageNotFound'}>Política de Cookies</Link></li>
+                        <li><Link to={'pageNotFound'}>Termos e Condições</Link></li>
+                        <li><Link to={'pageNotFound'}>Entregas e Devoluções</Link></li>
+                        <li><Link to={'pageNotFound'}>Política de Privacidade</Link></li>
                     </ul>
                 </div>
             </div>
