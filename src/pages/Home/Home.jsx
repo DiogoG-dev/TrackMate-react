@@ -6,6 +6,7 @@ import { ExerciseTrackingSection } from '../../components/sections/ExerciseTrack
 import { NotificationSystemSection } from '../../components/sections/NotificationSystemSection/NotificationSystemSection.jsx';
 import { BraceletVarietySection } from '../../components/sections/BraceletVarietySection/BraceletVarietySection.jsx';
 import { AlertSystemSection } from '../../components/sections/AlertSystemSection/AlertSystemSection.jsx';
+import { ProductSpecifications } from '../../components/sections/ProductSpecifications/ProductSpecifications.jsx';
 
 export function Home() {
     return (
@@ -16,6 +17,7 @@ export function Home() {
             <NotificationSystemSection />
             <BraceletVarietySection />
             <AlertSystemSection />
+            <ProductSpecifications />
             <Footer />
         </>
     )

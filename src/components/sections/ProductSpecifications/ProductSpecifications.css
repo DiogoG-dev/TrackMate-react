@@ -1,0 +1,169 @@
+/* Sexta Seção da Página */
+/* Especificações */
+.product-specifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 175vh;
+    background-image: 
+        url('/TrackMate-react/imgs/folds/blackFold.png'),
+        url('/TrackMate-react/imgs/backgrounds/bgGradient.avif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto, cover;
+}
+
+/* Título da Seção */
+.product-specifications h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+/* Container dos Cards*/
+.specifications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+/* Cards de Cima */
+.specifications-container .specification-content-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 350px;
+}
+
+/* Cards de Baixo */
+.specifications-container .specification-content-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Distanciamento do Cards */
+.battery-specification, .charging-specification {
+    margin-top: 50px;
+}
+
+.bluetooth-specification, .water-resistance-specification {
+    margin-bottom: 50px;
+}
+
+.charging-specification {
+    margin-left: 50px;
+}
+
+.water-resistance-specification {
+    margin-right: 50px;
+}
+
+/* Card */
+.card {
+    background-color: var(--bg-color-1);
+    border-radius: 15px;
+    filter: drop-shadow(1px 1px 10px var(--bg-color-1));
+    border: 1px solid var(--bg-color-2);
+}
+
+/* Título do Card */
+.card h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px;
+}
+
+/* Texto do Card */
+.card p {
+    width: 325px;
+    margin: 0 25px 25px 25px;
+}
+
+/* Ícones */
+.icon-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    background-color: var(--bg-color-1);
+    background: var(--linear-gradient-2);
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-specifications {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        background-color: var(--bg-color-1);
+        background-image: 
+            url('/TrackMate-react/imgs/folds/blackFold.png')
+            url('/TrackMate-react/imgs/backgrounds/bgGradient.avif');
+        background-repeat: no-repeat;
+        background-position: 55% 15%;
+        background-size: contain;
+    }
+
+    .product-specifications h2 {
+        font-size: 26px;
+        width: 85%;
+        line-height: 1.1;
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+
+    .specifications-container {
+        width: 100%;
+        margin: 115% 0 50px 0;
+    }
+
+    .specifications-container .specification-content-up, .specifications-container .specification-content-down {
+        flex-direction: column;
+        width: 85%;
+        margin: 0;
+    }
+
+    .battery-specification, .charging-specification, .bluetooth-specification {
+        margin: 0 0 40px 0;
+    }
+
+    .water-resistance-specification {
+        margin: 0;
+    }
+
+    .card {
+        flex-direction: column;
+        background-color: var(--bg-color-6);
+        filter: drop-shadow(1px 1px 8px var(--bg-color-4));
+        border: none;
+        padding: 30px;
+    }
+
+    .card h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .card h3 i {
+        margin-bottom: 5px;
+    }
+
+    .card p {
+        width: auto;
+        margin: 15px 0 0 0;
+        text-align: center;
+    }
+}
