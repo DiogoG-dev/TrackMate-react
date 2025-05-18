@@ -21,13 +21,23 @@ export function Header() {
         }
     }, [])
 
+    // Lida com a Mudança da Cor de Fundo pelo Scroll
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('main-header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    })
+
     return (
-        <header>
+        <header id='main-header'>
             <nav className="nav-container">
                 <Link to={'/'} className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></Link>
                 <div className="nav-contents">
-                    <Link to={'pageNotFound'} className="faq"><span>FAQ</span></Link>
-                    <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i><span>Login</span></Link>
+                    <Link to={'pageNotFound'} className="faq">FAQ</Link>
+                    <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i>Login</Link>
                     <Link to={'pageNotFound'} className="bag"><i className="fa-solid fa-bag-shopping"></i></Link>
                     <Link to={'pageNotFound'} className="buy-button">Comprar agora</Link>
                     <div className="menu-hamburguer">
@@ -40,9 +50,9 @@ export function Header() {
 
             <div className="nav-responsive">
                 <div className="login-content">
-                    <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i><span>Login</span></Link>
+                    <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i>Login</Link>
                 </div>
-                <Link to={'pageNotFound'} className="faq"><span>FAQ</span></Link>
+                <Link to={'pageNotFound'} className="faq">FAQ</Link>
                 <BuyButton />
             </div>
         </header>
