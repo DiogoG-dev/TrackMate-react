@@ -3,6 +3,7 @@ import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 import { HeroSection } from '../../components/sections/HeroSection/HeroSection.jsx';
 import { ExerciseTrackingSection } from '../../components/sections/ExerciseTrackingSection/ExerciseTrackingSection.jsx';
+import { NotificationSystemSection } from '../../components/sections/NotificationSystemSection/NotificationSystemSection.jsx';
 
 export function Home() {
     return (
@@ -10,6 +11,7 @@ export function Home() {
             <Header />
             <HeroSection />
             <ExerciseTrackingSection />
+            <NotificationSystemSection />
             <Footer />
         </>
     )
