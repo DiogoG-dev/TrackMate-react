@@ -101,18 +101,18 @@
 
 @media (max-width: 768px) {
     .product-specifications {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         height: auto;
         background-color: var(--bg-color-1);
-        background-image: 
-            url('/TrackMate-react/imgs/folds/blackFold.png')
+        background-image:
+            url('/TrackMate-react/imgs/folds/blackFold.png'),
             url('/TrackMate-react/imgs/backgrounds/bgGradient.avif');
         background-repeat: no-repeat;
-        background-position: 55% 15%;
+        background-position: 50% 12%;
         background-size: contain;
+    }
+
+    .product-specifications .buy-button {
+        font-size: 18px;
     }
 
     .product-specifications h2 {

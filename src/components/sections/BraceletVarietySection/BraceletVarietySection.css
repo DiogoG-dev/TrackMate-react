@@ -67,6 +67,10 @@
         background-position: 0% 67%;
     }
 
+    .bracelet-variety-section .buy-button {
+        font-size: 18px;
+    }
+
     .bracelet-variety-content i {
         width: 45px;
         height: 45px;
