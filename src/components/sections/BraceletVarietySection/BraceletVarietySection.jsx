@@ -13,7 +13,7 @@ export function BraceletVarietySection() {
                 </p>
             </div>
             <div className="bg-bracelets-img">
-                <img className="bracelets-img" src="/TrackMate-react/imgs/folds/braceletVariety.png" alt="" />
+                <img className="bracelets-img" src="/TrackMate-react/imgs/folds/braceletVarietyMobile.png" alt="" />
             </div>
             <BuyButton />
         </section>
