@@ -1,0 +1,102 @@
+/* Quarta Seção da Página */
+/* Variedade de Braceletes */
+.bracelet-variety-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150vh;
+    background-color: var(--bg-color-1);
+    background-image: url('/TrackMate-react/imgs/backgrounds/bgLineGradient.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Conteúdo Principal da Seção */
+.bracelet-variety-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ícone do Olho */
+.bracelet-variety-content i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    background-color: var(--bg-color-1);
+    background: var(--linear-gradient-2);
+    border-radius: 100%;
+    margin-bottom: 50px;
+}
+
+/* Título */
+.bracelet-variety-content h3 {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+/* Parágrafo */
+.bracelet-variety-content p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 700px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* Container com Imagem dos Braceletes */
+.bg-bracelets-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Botão Comprar */
+.bracelet-variety-section a {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    .bracelet-variety-section {
+        height: 100vh;
+        background-position: 0% 67%;
+    }
+
+    .bracelet-variety-content i {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        border-radius: 100%;
+        margin-bottom: 0;
+    }
+
+    .bracelet-variety-content h3 {
+        font-size: 26px;
+        width: 85%;
+        line-height: 1.1;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .bracelet-variety-content p {
+        width: 90%;
+        line-height: 1.6;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .bracelets-img {
+        width: 360px;
+    }
+}

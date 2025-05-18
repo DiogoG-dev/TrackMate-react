@@ -1,0 +1,21 @@
+import './BraceletVarietySection.css';
+import { BuyButton } from '../../common/BuyButton/BuyButton.jsx'
+
+export function BraceletVarietySection() {
+    return (
+        <section className="bracelet-variety-section">
+            <div className="bracelet-variety-content">
+                <i className="fa-solid fa-eye"></i>
+                <h3>Combine sua pulseira com seu estilo</h3>
+                <p>
+                    O <b>TrackMade 0.4 XE</b> conta com uma variedade de braceletes que se adaptam ao seu visual — do esportivo ao casual — para 
+                    você treinar com estilo todos os dias.
+                </p>
+            </div>
+            <div className="bg-bracelets-img">
+                <img className="bracelets-img" src="/TrackMate-react/imgs/folds/braceletVariety.png" alt="" />
+            </div>
+            <BuyButton />
+        </section>
+    )
+}
