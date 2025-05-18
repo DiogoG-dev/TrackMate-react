@@ -9,17 +9,18 @@
     background-color: var(--bg-color-1);
 }
 
+
 /* Primeira Coluna do Grid */
 .exercise-tracking-content {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    background: 
-        linear-gradient(to bottom, var(--linear-gradient-1)),
+    background:
+        linear-gradient(var(--linear-gradient-1), var(--linear-gradient-1)),
         url('/TrackMate-react/imgs/backgrounds/female-athlete-before-run.avif');
     background-size: cover;
-    background-position: 50%;
+    background-position: center;
     margin-left: 260px;
 }
 
@@ -64,13 +65,12 @@
     line-height: 2;
 }
 
+
 /* Segunda Coluna do Grid */
 .gradient-background-product {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 100%;
     background-image: url('/TrackMate-react/imgs/backgrounds/mainBg.avif');
     background-size: cover;
     background-attachment: fixed;
@@ -85,32 +85,29 @@
 
 
 @media (max-width: 768px) {
+    /* Segunda Seção da Página Responsiva */
     .exercise-tracking-section {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr;
         row-gap: 30px;
-        height: 100vh;
         padding: 0;
-        width: 100vw;
+        height: 120vh;
     }
 
+    /* Primeira Coluna do Grid */
     .exercise-tracking-content {
-        background: url('/TrackMate-react/imgs/backgrounds/female-athlete-before-run.avif');
-        background-size: cover;
-        background-position: 45%;
         margin-left: 0;
-        width: 100%;
     }
 
+    /* Título do Conteúdo */
     .exercise-tracking-content h2 {
         flex-direction: column;
         align-items: start;
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: 3px;
         margin-left: 30px;
+        font-size: 12px;
     }
 
+    /* Icone do Título */
     .exercise-tracking-content h2 i {
         width: 47px;
         height: 47px;
@@ -118,25 +115,35 @@
         margin-bottom: 15px;
     }
 
+    /* Subtítulo */
     .exercise-tracking-content h3 {
         font-size: 28px;
         font-weight: 500;
-        width: 250px;
+        width: 255px;
         line-height: 1;
-        margin: 15px 0 0 30px;
+        margin: 15px 0 15px 30px;
     }
 
+    /* Parágrafo */
     .exercise-tracking-content p {
-        font-size: 16px;
-        font-weight: 400;
-        width: 250px;
+        width: 255px;
         line-height: 1.5;
         margin-left: 30px;
     }
 
-    /**/
+
+    /* Segunda Coluna do Grid */
     .gradient-background-product {
-        background: url('/TrackMate-react/imgs/backgrounds/mainBgReverse.avif');
-        background-position: 30%;
+        background: url('/TrackMate-react/imgs/backgrounds/mainBgMobile.avif');
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gradient-background-product .smartphoneSmarwatch {
+        width: 300px;
+        height: 410px;
+        position: relative;
+        right: 0;
     }
 }
