@@ -7,7 +7,7 @@ export function HeroSection() {
             <div className="hero-content">
                 <div className="product-presentation">
                     <span className="hero-text">Tenha uma rotina diária</span>
-                    <h1 className="hero-main-title">TrackMade 0.4 XE</h1>
+                    <h1 className="hero-main-title">TrackMate 0.4 XE</h1>
                     <h2 className="hero-secondary-title">O smartwatch que motiva você em cada passo</h2>
                     <BuyButton />
                 </div>

@@ -9,7 +9,7 @@ export function ProductSpecifications() {
                 <div className="specification-content-up">
                     <div className="battery-specification card">
                         <h3><i className="fa-solid fa-battery-full icon-cards"></i>20 horas de bateria</h3>
-                        <p>Treine o dia todo com energia — o TrackMade 0.4 XE acompanha seu ritmo sem precisar recarregar.</p>
+                        <p>Treine o dia todo com energia — o TrackMate 0.4 XE acompanha seu ritmo sem precisar recarregar.</p>
                     </div>
                     <div className="bluetooth-specification card">
                         <h3><i className="fa-brands fa-bluetooth icon-cards"></i>Conectividade Bluetooth</h3>
@@ -23,7 +23,7 @@ export function ProductSpecifications() {
                     </div>
                     <div className="water-resistance-specification card">
                         <h3><i className="fa-solid fa-droplet icon-cards"></i>Resistente à água</h3>
-                        <p>Treine sob qualquer condição — o TrackMade 0.4 XE é à prova de suor, chuva e até mergulhos leves.</p>
+                        <p>Treine sob qualquer condição — o TrackMate 0.4 XE é à prova de suor, chuva e até mergulhos leves.</p>
                     </div>                
                 </div>
             </div>

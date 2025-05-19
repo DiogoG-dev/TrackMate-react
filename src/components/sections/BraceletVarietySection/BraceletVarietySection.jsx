@@ -8,7 +8,7 @@ export function BraceletVarietySection() {
                 <i className="fa-solid fa-eye"></i>
                 <h3>Combine sua pulseira com seu estilo</h3>
                 <p>
-                    O <b>TrackMade 0.4 XE</b> conta com uma variedade de braceletes que se adaptam ao seu visual — do esportivo ao casual — para 
+                    O <b>TrackMate 0.4 XE</b> conta com uma variedade de braceletes que se adaptam ao seu visual — do esportivo ao casual — para 
                     você treinar com estilo todos os dias.
                 </p>
             </div>
