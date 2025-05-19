@@ -8,6 +8,7 @@ import { BraceletVarietySection } from '../../components/sections/BraceletVariet
 import { AlertSystemSection } from '../../components/sections/AlertSystemSection/AlertSystemSection.jsx';
 import { ProductSpecifications } from '../../components/sections/ProductSpecifications/ProductSpecifications.jsx';
 import { LiveBetterSection } from '../../components/sections/LiveBetterSection/LiveBetterSection.jsx';
+import { ClosingSection } from '../../components/sections/ClosingSection/ClosingSection.jsx';
 
 export function Home() {
     return (
@@ -20,6 +21,7 @@ export function Home() {
             <AlertSystemSection />
             <ProductSpecifications />
             <LiveBetterSection />
+            <ClosingSection />
             <Footer />
         </>
     )

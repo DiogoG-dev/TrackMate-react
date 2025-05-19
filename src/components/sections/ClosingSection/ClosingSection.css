@@ -1,0 +1,97 @@
+/* Oitava Seção */
+/* Fechamento */
+.closing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--bg-color-1);
+}
+
+/* Conteúdo */
+.closing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Ícone TrackMate */
+.closing-content i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 68px;
+    padding-left: 8px;
+    background: var(--linear-gradient-2);
+    border-radius: 100%;
+    margin: 100px 0 25px 0;
+}
+
+i .outer-circle {
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--color-2);
+}
+
+i .outer-circle .inner-circle {
+    width: 20px;
+    height: 20px;
+}
+
+/* Título */
+.closing-content h2 {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+/* Subtítulo */
+.closing-content h3 {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+    .closing-content i {
+        width: 45px;
+        height: 51px;
+        margin-bottom: 15px;
+    }
+
+    i .outer-circle {
+        width: 22px;
+        height: 22px;
+    }
+
+    i .outer-circle .inner-circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .closing-content h2 {
+        font-size: 12px;
+    }
+
+    .closing-content h3 {
+        font-size: 26px;
+        width: 280px;
+        line-height: 1.1;
+        margin: 25px 0;
+    }
+
+    .closing-content .buy-button {
+        font-size: 18px;
+    }
+
+    .closing-content .black-blue-fold {
+        width: 360px;
+        margin-top: 50px;
+    }
+}
