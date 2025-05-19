@@ -1,0 +1,122 @@
+/* Oferta */
+.discount-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--bg-color-1);
+    padding: 100px 0 100px 0;
+}
+
+/* Título da Oferta */
+.discount-offer h2 {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 800px;
+    line-height: 1.3;
+}
+
+/* Email */
+.discount-offer label {
+    width: 825px;
+    margin-bottom: 15px;
+}
+
+/* Formulário */
+.discount-offer form {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 900px;
+    height: 75px;
+    border: 2px solid var(--bg-color-2);
+    border-radius: 50px;
+    background-color: var(--bg-color-3);
+    filter: drop-shadow(1px 1px 10px var(--bg-color-2));
+}
+
+/* Entrada Email */
+.discount-offer form input {
+    display: flex;
+    width: 72%;
+    height: 74px;
+    border: none;
+    font-size: 20px;
+    color: var(--color-1);
+    caret-color: var(--color-3);
+}
+
+.discount-offer form input:focus {
+    outline: none;
+}
+
+.discount-offer form input::placeholder {
+    color: var(--color-1);
+}
+
+/* Botão Subscribe */
+.discount-offer .inside-button, .discount-offer .outside-button {
+    font-size: 18px;
+    width: 23%;
+    height: 60px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 45px;
+    color: var(--color-2);
+    background-color: var(--bg-color-2);
+    filter: drop-shadow(1px 1px 10px var(--bg-color-2));
+    cursor: pointer;
+}
+
+.discount-offer .outside-button {
+    visibility: hidden;
+}
+
+.discount-offer form button:hover {
+    background-color: var(--bg-color-1);
+    transition: 0.5s ease;
+}
+
+
+@media (max-width: 768px) {
+    .discount-offer h2 {
+        font-size: 26px;
+        width: 300px;
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 1.3;
+    }
+
+    .discount-offer label {
+        width: 300px;
+    }
+
+    .discount-offer form {
+        justify-content: center;
+        width: 340px;
+        height: 60px;
+    }
+
+    .discount-offer form input {
+        width: 88%;
+        height: 55px;
+        font-size: 16px;
+        color: var(--color-1);
+    }
+
+    .discount-offer .inside-button {
+        display: none;
+    }
+
+    .discount-offer .outside-button {
+        visibility: visible;
+        position: relative;
+        left: 27vw;
+        top: 20px;
+        width: 130px;
+        height: 50px;
+    }
+}

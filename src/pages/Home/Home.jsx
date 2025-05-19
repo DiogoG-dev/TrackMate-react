@@ -9,6 +9,7 @@ import { AlertSystemSection } from '../../components/sections/AlertSystemSection
 import { ProductSpecifications } from '../../components/sections/ProductSpecifications/ProductSpecifications.jsx';
 import { LiveBetterSection } from '../../components/sections/LiveBetterSection/LiveBetterSection.jsx';
 import { ClosingSection } from '../../components/sections/ClosingSection/ClosingSection.jsx';
+import { DiscountOffer } from '../../components/sections/DiscountOffer/DiscountOffer.jsx';
 
 export function Home() {
     return (
@@ -22,6 +23,7 @@ export function Home() {
             <ProductSpecifications />
             <LiveBetterSection />
             <ClosingSection />
+            <DiscountOffer />
             <Footer />
         </>
     )
