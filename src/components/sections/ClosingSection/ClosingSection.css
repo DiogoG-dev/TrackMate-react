@@ -91,7 +91,7 @@ i .outer-circle .inner-circle {
     }
 
     .closing-content .black-blue-fold {
-        width: 360px;
+        width: 100vw;
         margin-top: 50px;
     }
 }
