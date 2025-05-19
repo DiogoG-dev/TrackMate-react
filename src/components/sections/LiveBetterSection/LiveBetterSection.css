@@ -1,0 +1,101 @@
+/* Sétima Seção da Página*/
+/* Viva Melhor */
+.live-better-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    background-color: var(--bg-color-1);
+}
+
+/* Grade de Conteúdo */
+.live-better-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    width: 75%;
+    height: 100%;
+}
+
+/* Cards */
+.live-better-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Ícone dos Cards */
+.live-better-card  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    background: var(--linear-gradient-2);
+    border-radius: 100%;
+    margin: 50px 0 15px 0;
+}
+
+/* Título dos Cards */
+.live-better-card h2 {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+/* Subtítulo dos Cards */
+.live-better-card h3 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    width: 275px;
+    margin: 15px 0;
+}
+
+/* Backgrounds dos Cards */
+.live-better-content .sleep {
+    background-image: url('/TrackMate-react/imgs/backgrounds/womanSleeping.avif');
+    background-size: cover;
+}
+
+.live-better-content .meditation {
+    background-image: url('/TrackMate-react/imgs/backgrounds/womanMeditating.avif');
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .live-better-section {
+        height: 130vh;
+        padding-top: 50px;
+    }
+
+    .live-better-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 25px;
+        width: 85%;
+    }
+
+    .live-better-card  i {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .live-better-card h2 {
+        font-size: 12px;
+    }
+
+    .live-better-card h3 {
+        font-size: 26px;
+        width: 230px;
+        line-height: 1.1;
+    }
+}

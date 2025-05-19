@@ -7,6 +7,7 @@ import { NotificationSystemSection } from '../../components/sections/Notificatio
 import { BraceletVarietySection } from '../../components/sections/BraceletVarietySection/BraceletVarietySection.jsx';
 import { AlertSystemSection } from '../../components/sections/AlertSystemSection/AlertSystemSection.jsx';
 import { ProductSpecifications } from '../../components/sections/ProductSpecifications/ProductSpecifications.jsx';
+import { LiveBetterSection } from '../../components/sections/LiveBetterSection/LiveBetterSection.jsx';
 
 export function Home() {
     return (
@@ -18,6 +19,7 @@ export function Home() {
             <BraceletVarietySection />
             <AlertSystemSection />
             <ProductSpecifications />
+            <LiveBetterSection />
             <Footer />
         </>
     )
