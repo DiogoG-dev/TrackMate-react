@@ -34,3 +34,15 @@
     font-size: 18px;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .cookie-policy-container .cookie-policy-content {
+        width: 300px;
+    }
+
+    .cookie-policy-content h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+}
