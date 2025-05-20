@@ -5,11 +5,13 @@ import { CookiePolicy } from '../pages/CookiePolicy/CookiePolicy.jsx';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/pageNotFound' element={<PageNotFound />} />
-      <Route path='/cookiePolicy' element={<CookiePolicy />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/pageNotFound' element={<PageNotFound />} />
+        <Route path='/cookiePolicy' element={<CookiePolicy />} />
+      </Routes>
+    </>
   )
 }
 
