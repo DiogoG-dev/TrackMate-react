@@ -1,0 +1,36 @@
+.cookie-policy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 100px 0;
+    background-color: var(--bg-color-6);
+}
+
+.cookie-policy-container .cookie-policy-content {
+    width: 950px;
+}
+
+.cookie-policy-content h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.cookie-policy-content h3 {
+    margin-bottom: 10px;
+}
+
+.cookie-policy-content p, .cookie-policy-content ul {
+    margin-bottom: 25px;
+}
+
+.cookie-policy-content ul li {
+    margin-left: 20px;
+}
+
+.cookie-policy-content .disclaimer {
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+}
