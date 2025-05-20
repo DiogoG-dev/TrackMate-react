@@ -15,10 +15,10 @@ export function Footer() {
                 </div>
                 <div className="legal-information">
                     <ul className="list-legal">
-                        <li><Link to={'pageNotFound'}>Política de Cookies</Link></li>
-                        <li><Link to={'pageNotFound'}>Termos e Condições</Link></li>
-                        <li><Link to={'pageNotFound'}>Entregas e Devoluções</Link></li>
-                        <li><Link to={'pageNotFound'}>Política de Privacidade</Link></li>
+                        <li><Link to={'/CookiePolicy'}>Política de Cookies</Link></li>
+                        <li><Link to={'/pageNotFound'}>Termos e Condições</Link></li>
+                        <li><Link to={'/pageNotFound'}>Entregas e Devoluções</Link></li>
+                        <li><Link to={'/pageNotFound'}>Política de Privacidade</Link></li>
                     </ul>
                 </div>
             </div>
