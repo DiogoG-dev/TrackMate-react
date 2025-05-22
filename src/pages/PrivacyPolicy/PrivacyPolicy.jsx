@@ -57,7 +57,7 @@ export function PrivacyPolicy() {
                     <p>Para isso, entre em contato com nosso encarregado de dados (DPO): <span>privacidade@trackmate.com</span></p>
                     <p className='disclaimer'>
                         <i><strong>Este é um projeto demonstrativo.</strong> Não coletamos dados reais dos usuários, mas esta página simula como seria uma 
-                        política de cookies para um sistema real.</i>
+                        política de privacidade para um sistema real.</i>
                     </p>
                 </div>
             </main>
