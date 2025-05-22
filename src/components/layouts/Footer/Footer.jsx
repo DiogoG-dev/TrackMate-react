@@ -17,7 +17,7 @@ export function Footer() {
                     <ul className="list-legal">
                         <li><Link to={'/cookiePolicy'}>Política de Cookies</Link></li>
                         <li><Link to={'/termsConditions'}>Termos e Condições</Link></li>
-                        <li><Link to={'/pageNotFound'}>Entregas e Devoluções</Link></li>
+                        <li><Link to={'/deliveriesReturns'}>Entregas e Devoluções</Link></li>
                         <li><Link to={'/pageNotFound'}>Política de Privacidade</Link></li>
                     </ul>
                 </div>
