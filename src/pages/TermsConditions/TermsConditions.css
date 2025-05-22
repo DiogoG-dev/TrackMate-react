@@ -21,8 +21,17 @@
     margin-bottom: 5px;
 }
 
-.terms-conditions-content p {
+.terms-conditions-content p, .terms-conditions-content ul {
     margin-bottom: 25px;
+}
+
+.terms-conditions-content p span {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.terms-conditions-content ul li {
+    margin-left: 20px;
 }
 
 .terms-conditions-content .disclaimer {
