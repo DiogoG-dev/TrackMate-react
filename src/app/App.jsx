@@ -4,6 +4,7 @@ import { PageNotFound } from '../pages/PageNotFound/PageNotFound.jsx';
 import { CookiePolicy } from '../pages/CookiePolicy/CookiePolicy.jsx';
 import { TermsConditions } from '../pages/TermsConditions/TermsConditions.jsx';
 import { DeliveriesReturns } from '../pages/DeliveriesReturns/DeliveriesReturns.jsx'
+import { PrivacyPolicy } from '../pages/PrivacyPolicy/PrivacyPolicy.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/cookiePolicy' element={<CookiePolicy />} />
         <Route path='/termsConditions' element={<TermsConditions />} />
         <Route path='/deliveriesReturns' element={<DeliveriesReturns />} />
+        <Route path='/privacyPolicy' element={<PrivacyPolicy />} />
       </Routes>
     </>
   )
