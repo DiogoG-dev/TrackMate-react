@@ -8,7 +8,7 @@ export function ProductSpecifications() {
             <div className="specifications-container">
                 <div className="specification-content-up">
                     <div className="battery-specification card">
-                        <h3><i className="fa-solid fa-battery-full icon-cards"></i>20 horas de bateria</h3>
+                        <h3><i className="fa-solid fa-battery-full icon-cards"></i>72 horas de bateria</h3>
                         <p>Treine o dia todo com energia — o TrackMate 0.4 XE acompanha seu ritmo sem precisar recarregar.</p>
                     </div>
                     <div className="bluetooth-specification card">
