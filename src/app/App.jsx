@@ -5,6 +5,7 @@ import { CookiePolicy } from '../pages/CookiePolicy/CookiePolicy.jsx';
 import { TermsConditions } from '../pages/TermsConditions/TermsConditions.jsx';
 import { DeliveriesReturns } from '../pages/DeliveriesReturns/DeliveriesReturns.jsx'
 import { PrivacyPolicy } from '../pages/PrivacyPolicy/PrivacyPolicy.jsx';
+import { Faq } from '../pages/Faq/Faq.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/termsConditions' element={<TermsConditions />} />
         <Route path='/deliveriesReturns' element={<DeliveriesReturns />} />
         <Route path='/privacyPolicy' element={<PrivacyPolicy />} />
+        <Route path='/faq' element={<Faq />} />
       </Routes>
     </>
   )
