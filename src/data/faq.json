@@ -13,7 +13,7 @@
   },
   {
     "question": "Preciso baixar algum aplicativo?",
-    "response": "Sim, o relógio é sincronizado com o app oficial “TrackMate Health” (ou nome do app correspondente). Ele está disponível gratuitamente na Google Play e App Store."
+    "response": "Sim, o relógio é sincronizado com o app oficial “TrackMate Health”. Ele está disponível gratuitamente na Google Play e App Store."
   },
   {
     "question": "O TrackMate 0.4 XE é à prova d’água?",
@@ -22,10 +22,6 @@
   {
     "question": "Quanto tempo dura a bateria?",
     "response": "A bateria tem autonomia de 3 a 7 dias, dependendo do uso. O tempo de recarga completa é de aproximadamente 1 a 2 horas."
-  },
-  {
-    "question": "Como faço para configurar o relógio após receber?",
-    "response": "Basta ligar o relógio, baixar o app indicado no manual e seguir o passo a passo de pareamento via Bluetooth. O processo é simples e rápido."
   },
   {
     "question": "O que acompanha na embalagem?",
@@ -37,7 +33,7 @@
   },
   {
     "question": "E se eu quiser devolver ou trocar?",
-    "response": "Você pode solicitar a devolução em até 7 dias após o recebimento para reembolso total. Para trocas por defeito, entre em contato com nosso suporte: suporte@trackmate.com"
+    "response": "Você pode solicitar a devolução em até 7 dias após o recebimento do produto, entrando em contato com nosso suporte."
   },
   {
     "question": "Como entrar em contato com o suporte?",
