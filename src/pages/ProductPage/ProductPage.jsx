@@ -25,8 +25,15 @@ export function ProductPage() {
                                 <h5>SKU: 0001</h5>
                             </div>
                             <h3 className="value">R$ 85,00</h3>
-                            <div className="colors">
+                            <div className="colorsa">
                                 <h5>Cor *</h5>
+                                <div className="choose-color">
+                                    <input type="radio" className='colors' id='white' name='color'/>
+                                    <input type="radio" className='colors' id='black' name='color'/>
+                                    <input type="radio" className='colors' id='blue' name='color'/>
+                                    <input type="radio" className='colors' id='purpler' name='color'/>
+                                    <input type="radio" className='colors' id='green' name='color'/>
+                                </div>
                             </div>
                             <div className="amount">
                                 <h5>Quantidade *</h5>
