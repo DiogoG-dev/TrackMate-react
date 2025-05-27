@@ -1,14 +1,46 @@
 [
   {
-    "question": "Como faço para resetar minha senha?",
-    "response": "Você pode resetar sua senha clicando em 'Esqueci minha senha' na tela de login."
+    "question": "O que o TrackMate 0.4 XE faz?",
+    "response": "O TrackMate 0.4 XE é um smartwatch inteligente com recursos para monitoramento de saúde, atividades físicas, notificações do celular, controle de música, entre outros. Ideal para quem busca praticidade e tecnologia no pulso."
   },
   {
-    "question": "Quais formas de pagamento são aceitas?",
-    "response": "Aceitamos cartão de crédito, boleto bancário e PIX."
+    "question": "Quais são as principais funcionalidades?",
+    "response": "Monitoramento de batimentos cardíacos e sono, contador de passos e calorias, notificações de chamadas, SMS e apps, alarme, cronômetro, previsão do tempo, controle de música e câmera do celular e modo esportivo para corrida, caminhada, ciclismo."
   },
   {
-    "question": "Posso trocar um produto após a compra?",
-    "response": "Sim, você pode solicitar a troca em até 7 dias corridos após o recebimento do produto."
+    "question": "É compatível com Android e iOS?",
+    "response": "Sim! O TrackMate 0.4 XE é compatível com a maioria dos smartphones Android (versão 5.0 ou superior) e iPhones com iOS 9.0 ou superior."
+  },
+  {
+    "question": "Preciso baixar algum aplicativo?",
+    "response": "Sim, o relógio é sincronizado com o app oficial “TrackMate Health” (ou nome do app correspondente). Ele está disponível gratuitamente na Google Play e App Store."
+  },
+  {
+    "question": "O TrackMate 0.4 XE é à prova d’água?",
+    "response": "Sim, ele possui resistência IP67, o que significa que é resistente a respingos e suor. Não é recomendado para natação ou mergulho."
+  },
+  {
+    "question": "Quanto tempo dura a bateria?",
+    "response": "A bateria tem autonomia de 3 a 7 dias, dependendo do uso. O tempo de recarga completa é de aproximadamente 1 a 2 horas."
+  },
+  {
+    "question": "Como faço para configurar o relógio após receber?",
+    "response": "Basta ligar o relógio, baixar o app indicado no manual e seguir o passo a passo de pareamento via Bluetooth. O processo é simples e rápido."
+  },
+  {
+    "question": "O que acompanha na embalagem?",
+    "response": "1x Relógio TrackMate 0.4 XE, 1x Pulseira ajustável, 1x Cabo carregador magnético e 1x Manual do usuário (PT-BR)"
+  },
+  {
+    "question": "Tem garantia?",
+    "response": "Sim, oferecemos garantia de 90 dias contra defeitos de fabricação, conforme o Código de Defesa do Consumidor."
+  },
+  {
+    "question": "E se eu quiser devolver ou trocar?",
+    "response": "Você pode solicitar a devolução em até 7 dias após o recebimento para reembolso total. Para trocas por defeito, entre em contato com nosso suporte: suporte@trackmate.com"
+  },
+  {
+    "question": "Como entrar em contato com o suporte?",
+    "response": "Você pode enviar um e-mail para suporte@trackmate.com. Nosso atendimento funciona de segunda a sexta, das 9h às 18h."
   }
 ]
