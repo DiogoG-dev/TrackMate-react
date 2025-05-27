@@ -1,0 +1,35 @@
+.question-container {
+    width: 100%;
+    padding: 25px 0;
+    border-bottom: solid 1px var(--color-3);
+}
+
+.question-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.question-content h4 {
+    font-weight: 400;
+}
+
+.change {
+    transform: rotate(180deg)
+}
+
+.question-container .response {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.2s ease, max-height 0.2s ease, margin 0.5s ease;
+    margin: 0;
+}
+
+.response.show {
+    opacity: 1;
+    max-height: 500px;
+    margin: 25px 30px 0 0;
+}
