@@ -1,0 +1,14 @@
+[
+  {
+    "question": "Como faço para resetar minha senha?",
+    "response": "Você pode resetar sua senha clicando em 'Esqueci minha senha' na tela de login."
+  },
+  {
+    "question": "Quais formas de pagamento são aceitas?",
+    "response": "Aceitamos cartão de crédito, boleto bancário e PIX."
+  },
+  {
+    "question": "Posso trocar um produto após a compra?",
+    "response": "Sim, você pode solicitar a troca em até 7 dias corridos após o recebimento do produto."
+  }
+]
