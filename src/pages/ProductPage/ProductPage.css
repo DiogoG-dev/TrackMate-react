@@ -1,0 +1,62 @@
+.main-container-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0 100px 0;
+    background-color: var(--bg-color-1);
+}
+
+.content-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 830px;
+    background-color: red;
+}
+
+.product-apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 350px;
+    background-color: rebeccapurple;
+}
+
+.main-image{
+    background-image: url('/TrackMate-react/imgs/folds/blackFold.png');
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+}
+
+.information-purchase-and-terms {
+    width: 350px;
+    background-color: var(--bg-color-1);
+}
+
+.information-purchase-and-terms .information {
+}
+.information-purchase-and-terms .information .name-sku-product {
+    margin-bottom: 15px;
+}
+
+.information-purchase-and-terms .information .name-sku-product h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.information .amount h5, .information .colors h5, .information .name-sku-product h5 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.information-purchase-and-terms .information .value {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.information .colors, .information .amount {
+    margin-bottom: 15px;
+}

@@ -36,7 +36,7 @@ export function Header() {
             <nav className="nav-container">
                 <Link to={'/'} className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></Link>
                 <div className="nav-contents">
-                    <Link to={'faq'} className="faq">FAQ</Link>
+                    <Link to={'/faq'} className="faq">FAQ</Link>
                     <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i>Login</Link>
                     <Link to={'pageNotFound'} className="bag"><i className="fa-solid fa-bag-shopping"></i></Link>
                     <Link to={'pageNotFound'} className="buy-button">Comprar agora</Link>
@@ -52,7 +52,7 @@ export function Header() {
                 <div className="login-content">
                     <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i>Login</Link>
                 </div>
-                <Link to={'faq'} className="faq">FAQ</Link>
+                <Link to={'/faq'} className="faq">FAQ</Link>
                 <BuyButton />
             </div>
         </header>
