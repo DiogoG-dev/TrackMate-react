@@ -4,8 +4,7 @@ import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 import { useState } from 'react';
 
 export function ProductPage() {
-    const [color, setColor] = useState();
-
+    const [color, setColor] = useState('Branco');
     return (
         <>
             <Header />

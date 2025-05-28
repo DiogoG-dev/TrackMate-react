@@ -12,7 +12,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 830px;
-    background-color: red;
 }
 
 .product-apresentation {
@@ -21,7 +20,6 @@
     align-items: start;
     justify-content: center;
     width: 350px;
-    background-color: rebeccapurple;
 }
 
 .main-image{
@@ -36,21 +34,21 @@
     background-color: var(--bg-color-1);
 }
 
-.information-purchase-and-terms .information .name-sku-product {
+.information .name-sku-product {
     margin-bottom: 15px;
 }
 
-.information-purchase-and-terms .information .name-sku-product h2 {
+.information .name-sku-product h2 {
     font-size: 36px;
     font-weight: 400;
 }
 
-.information .amount h5, .information .bracelet-colors h5, .information .name-sku-product h5 {
+.amount h5, .bracelet-colors h5,  .name-sku-product h5 {
     font-size: 12px;
     font-weight: 400;
 }
 
-.information-purchase-and-terms .information .value {
+ .information .value {
     font-weight: 400;
     margin-bottom: 15px;
 }
@@ -61,6 +59,9 @@
 
 
 /* Colors Buttons */
+.choose-color {
+    margin-top: 5px;
+}
 .choose-color .colors {
     display: none;
 }
