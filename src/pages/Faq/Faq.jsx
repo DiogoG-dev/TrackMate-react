@@ -2,7 +2,7 @@ import './Faq.css';
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 import { Question } from '../../components/common/Question/Question.jsx';
-import faqData from '../../data/faq.json'
+import faqData from '../../data/faqs.json'
 
 export function Faq() {
     return (

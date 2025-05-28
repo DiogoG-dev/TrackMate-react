@@ -2,6 +2,8 @@ import './ProductPage.css'
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 import { useEffect, useState } from 'react';
+import { Question } from '../../components/common/Question/Question.jsx';
+import termsData from '../../data/terms.json';
 
 export function ProductPage() {
     const [color, setColor] = useState('Branco');
@@ -57,9 +59,17 @@ export function ProductPage() {
                         <button className='add-to-bag'>Adicionar a sacola</button>
 
                         <div className="terms">
+                            {termsData.map((item, index) => (
+                                <Question 
+                                key={index}
+                                questionContentId={index} 
+                                arrowId={index} 
+                                responseId={index} 
+                                question={item.title} 
+                                response={item.information} />
+                            ))}
                         </div>
                     </div>
-
                 </div>
             </main>
             <Footer />

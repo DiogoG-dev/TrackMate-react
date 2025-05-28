@@ -163,3 +163,17 @@
     color: var(--color-3);
 
 }
+
+
+/* Terms */
+.terms .question-container {
+    border-bottom: solid 1px var(--color-2);
+}
+
+.terms .question-container .question-content h4 {
+    font-size: 16px;
+}
+
+.terms .question-container .response {
+    font-size: 14px;
+}
