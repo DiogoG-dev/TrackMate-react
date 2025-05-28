@@ -145,3 +145,21 @@
 .minus-gray i {
     color: rgb(200, 200, 200);
 }
+
+/* Button */
+.add-to-bag {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--bg-color-2);
+    font-size: 15px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.add-to-bag:hover {
+    background-color: var(--bg-color-3);
+    color: var(--color-3);
+
+}

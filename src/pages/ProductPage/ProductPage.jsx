@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 export function ProductPage() {
     const [color, setColor] = useState('Branco');
-    const [amount, setAmount] = useState(1)
+    const [amount, setAmount] = useState(1);
 
     return (
         <>
@@ -45,7 +45,7 @@ export function ProductPage() {
                                 </div>
                             </div>
                             <div className="amount-container">
-                                <h5>Quantidade *</h5>
+                                <h5>Quantidade *:</h5>
                                 <div className="choose-amount">
                                     <button className={`minus ${amount === 1 ? 'minus-gray' : ''}`} id="minus" onClick={() => setAmount(amount - 1)} disabled={amount === 1}><i className="fa-solid fa-minus"></i></button>
                                     <div className="amount">{amount}</div>
