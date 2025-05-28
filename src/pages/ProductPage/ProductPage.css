@@ -36,8 +36,6 @@
     background-color: var(--bg-color-1);
 }
 
-.information-purchase-and-terms .information {
-}
 .information-purchase-and-terms .information .name-sku-product {
     margin-bottom: 15px;
 }
@@ -47,7 +45,7 @@
     font-weight: 400;
 }
 
-.information .amount h5, .information .colors h5, .information .name-sku-product h5 {
+.information .amount h5, .information .bracelet-colors h5, .information .name-sku-product h5 {
     font-size: 12px;
     font-weight: 400;
 }
@@ -57,35 +55,64 @@
     margin-bottom: 15px;
 }
 
-.information .colors, .information .amount {
+.information .bracelet-colors, .information .amount {
     margin-bottom: 15px;
 }
 
-.choose-color .colors {
 
+/* Colors Buttons */
+.choose-color .colors {
+    display: none;
 }
 
-.colors {
-    zoom: 1.3;
+.labels {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-right: 5px;
+}
+
+.labels::before {
+    content: '';
+    margin: 2px 0 0 2px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
     border: 1px solid white;
 }
 
-#white {
-    accent-color: white;
+.labels:hover {
+    border: 1px solid white;
 }
 
-#black {
-    accent-color: black;
+.label-white::before {
+    background-color: white;
 }
 
-#blue {
-    accent-color: blue;
+.label-black::before {
+    background-color: black;
 }
 
-#purpler {
-    accent-color: purple;
+.label-blue::before {
+    background-color: blue;
 }
 
-#green {
-    accent-color: green;
+.label-purple::before {
+    background-color: purple;
+}
+
+.label-turquoise::before {
+    background-color: turquoise;
+}
+
+.colors:checked + .label-white,
+.colors:checked + .label-black,
+.colors:checked + .label-blue,
+.colors:checked + .label-purple,
+.colors:checked + .label-turquoise {
+    border: 1px solid white;
 }

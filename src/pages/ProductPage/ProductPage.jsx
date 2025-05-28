@@ -1,8 +1,11 @@
 import './ProductPage.css'
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
+import { useState } from 'react';
 
 export function ProductPage() {
+    const [color, setColor] = useState();
+
     return (
         <>
             <Header />
@@ -25,14 +28,19 @@ export function ProductPage() {
                                 <h5>SKU: 0001</h5>
                             </div>
                             <h3 className="value">R$ 85,00</h3>
-                            <div className="colorsa">
-                                <h5>Cor *</h5>
+                            <div className="bracelet-colors">
+                                <h5>Cor *: {color}</h5>
                                 <div className="choose-color">
-                                    <input type="radio" className='colors' id='white' name='color'/>
-                                    <input type="radio" className='colors' id='black' name='color'/>
-                                    <input type="radio" className='colors' id='blue' name='color'/>
-                                    <input type="radio" className='colors' id='purpler' name='color'/>
-                                    <input type="radio" className='colors' id='green' name='color'/>
+                                    <input type="radio" className='colors' id='white' name='color' onClick={() => setColor('Branco')} />
+                                    <label htmlFor="white" className='labels label-white'></label>
+                                    <input type="radio" className='colors' id='black' name='color'onClick={() => setColor('Preto')} />
+                                    <label htmlFor="black" className='labels label-black'></label>
+                                    <input type="radio" className='colors' id='blue' name='color' onClick={() => setColor('Azul')} />
+                                    <label htmlFor="blue" className='labels label-blue'></label>
+                                    <input type="radio" className='colors' id='purple' name='color' onClick={() => setColor('Roxo')} />
+                                    <label htmlFor="purple" className='labels label-purple'></label>
+                                    <input type="radio" className='colors' id='turquoise' name='color' onClick={() => setColor('Turquesa')} />
+                                    <label htmlFor="turquoise" className='labels label-turquoise'></label>
                                 </div>
                             </div>
                             <div className="amount">
