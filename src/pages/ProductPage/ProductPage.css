@@ -43,7 +43,7 @@
     font-weight: 400;
 }
 
-.amount h5, .bracelet-colors h5,  .name-sku-product h5 {
+.amount-container h5, .bracelet-colors h5,  .name-sku-product h5 {
     font-size: 12px;
     font-weight: 400;
 }
@@ -53,7 +53,7 @@
     margin-bottom: 15px;
 }
 
-.information .bracelet-colors, .information .amount {
+.information .bracelet-colors, .information .amount-container {
     margin-bottom: 15px;
 }
 
@@ -116,4 +116,32 @@
 .colors:checked + .label-purple,
 .colors:checked + .label-turquoise {
     border: 1px solid white;
+}
+
+
+/* Box Amount */
+.choose-amount {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.choose-amount .minus, .choose-amount .amount, .choose-amount .plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    font-size: 16px;
+    color: black;
+    border: none;
+}
+
+.minus i, .plus i {
+    color: rgb(100, 100, 100);
+}
+
+.minus-gray i {
+    color: rgb(200, 200, 200);
 }

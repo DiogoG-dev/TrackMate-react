@@ -1,10 +1,12 @@
 import './ProductPage.css'
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export function ProductPage() {
     const [color, setColor] = useState('Branco');
+    const [amount, setAmount] = useState(1)
+
     return (
         <>
             <Header />
@@ -30,7 +32,7 @@ export function ProductPage() {
                             <div className="bracelet-colors">
                                 <h5>Cor *: {color}</h5>
                                 <div className="choose-color">
-                                    <input type="radio" className='colors' id='white' name='color' onClick={() => setColor('Branco')} />
+                                    <input type="radio" className='colors' id='white' name='color' onChange={() => setColor('Branco')} checked={color === 'Branco'}/>
                                     <label htmlFor="white" className='labels label-white'></label>
                                     <input type="radio" className='colors' id='black' name='color'onClick={() => setColor('Preto')} />
                                     <label htmlFor="black" className='labels label-black'></label>
@@ -42,8 +44,13 @@ export function ProductPage() {
                                     <label htmlFor="turquoise" className='labels label-turquoise'></label>
                                 </div>
                             </div>
-                            <div className="amount">
+                            <div className="amount-container">
                                 <h5>Quantidade *</h5>
+                                <div className="choose-amount">
+                                    <button className={`minus ${amount === 1 ? 'minus-gray' : ''}`} id="minus" onClick={() => setAmount(amount - 1)} disabled={amount === 1}><i className="fa-solid fa-minus"></i></button>
+                                    <div className="amount">{amount}</div>
+                                    <button className="plus" onClick={() => setAmount(amount + 1)}><i className="fa-solid fa-plus"></i></button>
+                                </div>
                             </div>
                         </div>
 
