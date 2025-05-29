@@ -32,6 +32,11 @@
 
 /* Main Image */
 .image-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     margin-top: 5px;
 }
 .image-carousel .bracelet-colors {
@@ -95,8 +100,12 @@
     border-radius: 3px;
 }
 
-.product-description {
-    margin-top: 15px;
+.product-description-desktop, .product-description-mobile {
+    margin-top: 25px;
+}
+
+.product-description-mobile {
+    display: none;
 }
 
 .information-purchase-and-terms {
@@ -272,4 +281,34 @@
 
 .terms .question-container .response {
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .main-container-product {
+        width: 100vw;
+        padding: 75px 0 0px 0;
+    }
+
+    .content-product {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .product-apresentation {
+        width: 100%;
+    }
+
+    .information-purchase-and-terms {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .product-description-desktop {
+        display: none;
+    }
+
+    .product-description-mobile {
+        display: block;
+    }
 }

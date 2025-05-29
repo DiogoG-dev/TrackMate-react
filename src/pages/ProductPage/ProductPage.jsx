@@ -31,7 +31,7 @@ export function ProductPage() {
                                 <label htmlFor="bracelet-turquoise" className='bracelet-labels bracelet-label-turquoise'></label>
                             </div>
                         </div>
-                        <div className="product-description">O TrackMate 0.4 XE tem pulseira de silicone ajustável, é leve e resistente. Evite calor e água excessivos. Limpe com pano seco, carregue apenas com o cabo magnético incluso e utilize o app TrackMate Health para configurar e acompanhar seus dados.</div>
+                        <div className="product-description-desktop">O TrackMate 0.4 XE tem pulseira de silicone ajustável, é leve e resistente. Evite calor e água excessivos. Limpe com pano seco, carregue apenas com o cabo magnético incluso e utilize o app TrackMate Health para configurar e acompanhar seus dados.</div>
                     </div>
                     
                     <div className="information-purchase-and-terms">
@@ -83,7 +83,7 @@ export function ProductPage() {
                         </div>
 
                         <button className='add-to-bag'>Adicionar a sacola</button>
-
+                        <div className="product-description-mobile">O TrackMate 0.4 XE tem pulseira de silicone ajustável, é leve e resistente. Evite calor e água excessivos. Limpe com pano seco, carregue apenas com o cabo magnético incluso e utilize o app TrackMate Health para configurar e acompanhar seus dados.</div>
                         <div className="terms">
                             {termsData.map((item, index) => (
                                 <Question 
