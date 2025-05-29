@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     width: 350px;
 }
 
@@ -27,6 +27,7 @@
     background-size: cover;
     width: 350px;
     height: 350px;
+    margin-top: 90px;
 }
 
 .information-purchase-and-terms {
@@ -46,6 +47,10 @@
 .amount-container h5, .bracelet-colors h5,  .name-sku-product h5 {
     font-size: 12px;
     font-weight: 400;
+}
+
+.bracelet-colors h5 .choosed-color {
+    margin-left: 5px;
 }
 
  .information .value {
@@ -116,6 +121,28 @@
 .colors:checked + .label-purple,
 .colors:checked + .label-turquoise {
     border: 1px solid white;
+}
+
+.color-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.color-tooltip .tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    transform: translateX(-50%);
+    padding: 3px 8px;
+    background-color: var(--bg-color-1);
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--color-2);
+}
+
+.labels:hover + .tooltip {
+    visibility: visible;
 }
 
 

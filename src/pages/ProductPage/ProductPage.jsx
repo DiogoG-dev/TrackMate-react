@@ -32,18 +32,33 @@ export function ProductPage() {
                             </div>
                             <h3 className="value">R$ 85,00</h3>
                             <div className="bracelet-colors">
-                                <h5>Cor *: {color}</h5>
+                                <h5>Cor *:<span className='choosed-color'>{color}</span></h5>
                                 <div className="choose-color">
-                                    <input type="radio" className='colors' id='white' name='color' onChange={() => setColor('Branco')} checked={color === 'Branco'}/>
-                                    <label htmlFor="white" className='labels label-white'></label>
-                                    <input type="radio" className='colors' id='black' name='color'onClick={() => setColor('Preto')} />
-                                    <label htmlFor="black" className='labels label-black'></label>
-                                    <input type="radio" className='colors' id='blue' name='color' onClick={() => setColor('Azul')} />
-                                    <label htmlFor="blue" className='labels label-blue'></label>
-                                    <input type="radio" className='colors' id='purple' name='color' onClick={() => setColor('Roxo')} />
-                                    <label htmlFor="purple" className='labels label-purple'></label>
-                                    <input type="radio" className='colors' id='turquoise' name='color' onClick={() => setColor('Turquesa')} />
-                                    <label htmlFor="turquoise" className='labels label-turquoise'></label>
+                                    <div className="color-tooltip">
+                                        <input type="radio" className="colors" id="white" name="color" onChange={() => setColor('Branco')} checked={color === 'Branco'}/>
+                                        <label htmlFor="white" className="labels label-white"></label>
+                                        <span className="tooltip">Branco</span>
+                                    </div>
+                                    <div className="color-tooltip">
+                                        <input type="radio" className='colors' id='black' name='color'onClick={() => setColor('Preto')} />
+                                        <label htmlFor="black" className='labels label-black'></label>
+                                        <span className="tooltip">Preto</span>
+                                    </div>
+                                    <div className="color-tooltip">
+                                        <input type="radio" className='colors' id='blue' name='color' onClick={() => setColor('Azul')} />
+                                        <label htmlFor="blue" className='labels label-blue'></label>
+                                        <span className="tooltip">Azul</span>
+                                    </div>
+                                    <div className="color-tooltip">
+                                        <input type="radio" className='colors' id='purple' name='color' onClick={() => setColor('Roxo')} />
+                                        <label htmlFor="purple" className='labels label-purple'></label>
+                                        <span className="tooltip">Roxo</span>
+                                    </div>
+                                    <div className="color-tooltip">
+                                        <input type="radio" className='colors' id='turquoise' name='color' onClick={() => setColor('Turquesa')} />
+                                        <label htmlFor="turquoise" className='labels label-turquoise'></label>
+                                        <span className="tooltip">Turquesa</span>
+                                    </div>
                                 </div>
                             </div>
                             <div className="amount-container">
