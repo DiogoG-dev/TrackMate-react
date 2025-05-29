@@ -64,14 +64,14 @@ header.scrolled {
     align-items: center;
 }
 
-.faq, .login, .bag, .buy-button {
+.faq, .login, .bag, .nav-contents .buy-button {
     margin: 0 15px;
     font-size: 16px;
     cursor: pointer;
     color: var(--color-2);
 }
 
-.faq:hover, .login:hover, .bag:hover, .buy-button:hover{
+.faq:hover, .login:hover, .bag:hover {
     transition: 0.5s ease;
     color: var(--color-3);
 }
