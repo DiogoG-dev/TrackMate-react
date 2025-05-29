@@ -17,17 +17,17 @@ export function ProductPage() {
 
                     <div className="product-apresentation">
                         <div className="product-apresentation-image">
-                            <div className="main-image"><img className='bracelet-color' id='bracelet-color' src={`/TrackMate-react/imgs/folds/bracelete${color}.png`} alt="" /></div>
+                            <div className="main-image"><img className='bracelet-color' id='bracelet-color' src={`/TrackMate-react/imgs/bracelets/bracelete${color}.png`} alt="" /></div>
                             <div className="image-carousel">
-                                <input type="radio" className="bracelet-colors" id="bracelet-white" name="bracelet-color" onChange={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/folds/braceleteBranco.png"} />
+                                <input type="radio" className="bracelet-colors" id="bracelet-white" name="bracelet-color" onChange={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/bracelets/braceleteBranco.png"} />
                                 <label htmlFor="bracelet-white" className="bracelet-labels bracelet-label-white"></label>
-                                <input type="radio" className='bracelet-colors' id='bracelet-black' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/folds/braceletePreto.png"} />
+                                <input type="radio" className='bracelet-colors' id='bracelet-black' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/bracelets/braceletePreto.png"} />
                                 <label htmlFor="bracelet-black" className='bracelet-labels bracelet-label-black'></label>
-                                <input type="radio" className='bracelet-colors' id='bracelet-blue' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/folds/braceleteAzul.png"} />
+                                <input type="radio" className='bracelet-colors' id='bracelet-blue' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/bracelets/braceleteAzul.png"} />
                                 <label htmlFor="bracelet-blue" className='bracelet-labels bracelet-label-blue'></label>
-                                <input type="radio" className='bracelet-colors' id='bracelet-purple' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/folds/braceleteRoxo.png"} />
+                                <input type="radio" className='bracelet-colors' id='bracelet-purple' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/bracelets/braceleteRoxo.png"} />
                                 <label htmlFor="bracelet-purple" className='bracelet-labels bracelet-label-purple'></label>
-                                <input type="radio" className='bracelet-colors' id='bracelet-turquoise' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/folds/braceleteTurquesa.png"} />
+                                <input type="radio" className='bracelet-colors' id='bracelet-turquoise' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/bracelets/braceleteTurquesa.png"} />
                                 <label htmlFor="bracelet-turquoise" className='bracelet-labels bracelet-label-turquoise'></label>
                             </div>
                         </div>

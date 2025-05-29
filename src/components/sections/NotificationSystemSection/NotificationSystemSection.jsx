@@ -3,7 +3,7 @@ import './NotificationSystemSection.css'
 export function NotificationSystemSection() {
     return (
         <section className="notification-system-section">
-            <div className="gradient-background-product"><img className="foldImage" src="/TrackMate-react/imgs/folds/foldImage.avif" alt="" /></div>
+            <div className="gradient-background-product"><img className="foldImage" src="/TrackMate-react/imgs/bracelets/blackWhiteBracelets.avif" alt="" /></div>
             <div className="notification-system-content">
                 <h2><i className="fa-solid fa-comment-dots"></i>SISTEMA DE NOTIFICAÇÃO</h2>
                 <h3>Lembretes para você manter o ritmo</h3>

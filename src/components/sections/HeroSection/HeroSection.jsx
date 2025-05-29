@@ -11,7 +11,7 @@ export function HeroSection() {
                     <h2 className="hero-secondary-title">O smartwatch que motiva você em cada passo</h2>
                     <BuyButton />
                 </div>
-                <img src='/TrackMate-react/imgs/folds/newFirstFold.avif' className="product-image"></img>
+                <img src='/TrackMate-react/imgs/bracelets/newFirstFold.avif' className="product-image"></img>
             </div>
         </section>
     )

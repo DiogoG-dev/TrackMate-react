@@ -1,10 +1,10 @@
-import './BraceletVarietySection.css';
+import './BraceletsVarietySection.css';
 import { BuyButton } from '../../common/BuyButton/BuyButton.jsx'
 
-export function BraceletVarietySection() {
+export function BraceletsVarietySection() {
     return (
-        <section className="bracelet-variety-section">
-            <div className="bracelet-variety-content">
+        <section className="bracelets-variety-section">
+            <div className="bracelets-variety-content">
                 <i className="fa-solid fa-eye"></i>
                 <h3>Combine sua pulseira com seu estilo</h3>
                 <p>
@@ -13,7 +13,7 @@ export function BraceletVarietySection() {
                 </p>
             </div>
             <div className="bg-bracelets-img">
-                <img className="bracelets-img" src="/TrackMate-react/imgs/folds/braceletVarietyMobile.png" alt="" />
+                <img className="bracelets-img" src="/TrackMate-react/imgs/bracelets/braceletsVariety.avif" alt="" />
             </div>
             <BuyButton />
         </section>

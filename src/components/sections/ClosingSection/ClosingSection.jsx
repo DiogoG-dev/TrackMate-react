@@ -9,7 +9,7 @@ export function ClosingSection() {
                 <h2>O DISPOSITIVO QUE MUDA VIDAS</h2>
                 <h3>Tenha hoje o seu TrackMate 0.4 XE</h3>
                 <BuyButton />
-                <img className='black-blue-fold' src="/TrackMate-react/imgs/folds/blackBlueFold.avif" alt="" />
+                <img className='black-blue-bracelet' src="/TrackMate-react/imgs/bracelets/blackBlueBracelets.avif" alt="" />
             </div>
         </section>
     )

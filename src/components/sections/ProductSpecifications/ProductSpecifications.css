@@ -7,7 +7,7 @@
     align-items: center;
     height: 175vh;
     background-image: 
-        url('/TrackMate-react/imgs/folds/blackFold.png'),
+        url('/TrackMate-react/imgs/bracelets/blackBracelet.png'),
         url('/TrackMate-react/imgs/backgrounds/bgGradient.avif');
     background-repeat: no-repeat;
     background-position: center center;
@@ -108,7 +108,7 @@
         height: auto;
         background-color: var(--bg-color-1);
         background-image:
-            url('/TrackMate-react/imgs/folds/blackFold.png'),
+            url('/TrackMate-react/imgs/bracelets/blackBracelet.png'),
             url('/TrackMate-react/imgs/backgrounds/bgGradient.avif');
         background-repeat: no-repeat;
         background-position: 50% 12%;

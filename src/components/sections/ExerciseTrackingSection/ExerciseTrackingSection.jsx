@@ -12,7 +12,7 @@ export function ExerciseTrackingSection() {
                 </p>
             </div>
             <div className="gradient-background-product">
-                <img className="smartphoneSmarwatch" src="/TrackMate-react/imgs/folds/smartphoneSmarwatch.avif" alt="" />
+                <img className="smartphoneSmarwatch" src="/TrackMate-react/imgs/bracelets/smartphoneSmarwatch.avif" alt="" />
             </div>
         </section>
     )
