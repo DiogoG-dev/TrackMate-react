@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 150px 0 100px 0;
+    padding: 175px 0 100px 0;
     background-color: var(--bg-color-1);
 }
 
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 830px;
+    width: 950px;
 }
 
 .product-apresentation {
@@ -19,19 +19,86 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    width: 350px;
+    width: 50%;
 }
 
 .main-image{
-    background-image: url('/TrackMate-react/imgs/folds/blackFold.png');
+    width: 100%;
+}
+
+.bracelet-color{
+    width: 100%;
+}
+
+/* Main Image */
+.image-carousel {
+    margin-top: 5px;
+}
+.image-carousel .bracelet-colors {
+    display: none;
+}
+
+.bracelet-labels {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-right: 5px;
+}
+
+.bracelet-labels::before {
+    content: '';
+    margin: 1px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+
+.bracelet-label-white::before {
+    background-image: url('/TrackMate-react/imgs/folds/braceleteBranco.png');
     background-size: cover;
-    width: 350px;
-    height: 350px;
-    margin-top: 90px;
+    background-repeat: no-repeat;
+}
+
+.bracelet-label-black::before {
+    background-image: url('/TrackMate-react/imgs/folds/braceletePreto.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bracelet-label-blue::before {
+    background-image: url('/TrackMate-react/imgs/folds/braceleteAzul.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bracelet-label-purple::before {
+    background-image: url('/TrackMate-react/imgs/folds/braceleteRoxo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bracelet-label-turquoise::before {
+    background-image: url('/TrackMate-react/imgs/folds/braceleteTurquesa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bracelet-colors:checked + .bracelet-label-white,
+.bracelet-colors:checked + .bracelet-label-black,
+.bracelet-colors:checked + .bracelet-label-blue,
+.bracelet-colors:checked + .bracelet-label-purple,
+.bracelet-colors:checked + .bracelet-label-turquoise {
+    border: 1px solid white;
+}
+
+.product-description {
+    margin-top: 15px;
 }
 
 .information-purchase-and-terms {
-    width: 350px;
+    width: 40%;
     background-color: var(--bg-color-1);
 }
 
