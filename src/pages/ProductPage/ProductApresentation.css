@@ -1,0 +1,141 @@
+/* Container que Contém o Carrossel de Images */
+.product-apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 50%;
+}
+
+/* Container que Armazena a Imagem Mostrada para Desktop */
+.main-image{
+    width: 100%;
+}
+
+/* Imagem Mostrada */
+.bracelet-color{
+    width: 100%;
+}
+
+
+
+/* Elementos que Iram Manipular as Imagens do Carrossel */
+.image-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* Oculta os Selects */
+.image-carousel .bracelet-colors {
+    display: none;
+}
+
+/* Estilaza as Label que Redirecional para os Selects */
+.bracelet-labels {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-right: 5px;
+}
+.bracelet-labels::before {
+    content: '';
+    margin: 1px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+/* Adicionando Imagens dos Braceletes de Fundo para sua Respectiva Imagem Central */
+.bracelet-label-white::before {
+    background-image: url('/TrackMate-react/imgs/bracelets/braceleteBranco.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bracelet-label-black::before {
+    background-image: url('/TrackMate-react/imgs/bracelets/braceletePreto.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bracelet-label-blue::before {
+    background-image: url('/TrackMate-react/imgs/bracelets/braceleteAzul.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bracelet-label-purple::before {
+    background-image: url('/TrackMate-react/imgs/bracelets/braceleteRoxo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bracelet-label-turquoise::before {
+    background-image: url('/TrackMate-react/imgs/bracelets/braceleteTurquesa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* As Labels Iram Destacar Quando o Mouse Passar por Cima */
+.bracelet-label-white:hover,
+.bracelet-label-black:hover,
+.bracelet-label-blue:hover,
+.bracelet-label-purple:hover,
+.bracelet-label-turquoise:hover {
+    transition: 0.5s;
+    background-color: rgba(100, 100, 100, 0.3);
+    border-radius: 3px;
+}
+
+
+
+/* Ocultando o Swiper para Desktop */
+.swiper {
+    display: none;
+}
+
+
+
+/* Descrição Rápida do Produto */
+.product-description-desktop, .product-description-mobile {
+    margin-top: 25px;
+}
+
+/* Desativando Descrição Mobile */
+.product-description-mobile {
+    display: none;
+}
+
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .product-apresentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-image, .image-carousel {
+        display: none;
+    }
+    
+    .swiper {
+        display: block;
+        width: 355px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--bg-color-2);
+    }
+
+    .product-description-desktop {
+        display: none;
+    }
+
+    .product-description-mobile {
+        display: block;
+    }
+}

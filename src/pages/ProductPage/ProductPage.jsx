@@ -1,11 +1,13 @@
 import './ProductPage.css'
+import './ProductApresentation.css'
+import './InformationPurchaseAndTerms.css'
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 import { useState, useRef } from 'react';
 import { Question } from '../../components/common/Question/Question.jsx';
-import termsData from '../../data/terms.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import termsData from '../../data/terms.json';
 
 export function ProductPage() {
     const [color, setColor] = useState('Branco');
@@ -39,15 +41,12 @@ export function ProductPage() {
                                 <input type="radio" className='bracelet-colors' id='bracelet-turquoise' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/bracelets/braceleteTurquesa.png"} />
                                 <label htmlFor="bracelet-turquoise" className='bracelet-labels bracelet-label-turquoise'></label>
                             </div>
+
                             <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="mySwiper" ref={swiperRef} >
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteBranco.png`} alt="" /></SwiperSlide>
-
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceletePreto.png`} alt="" /></SwiperSlide>
-
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteAzul.png`} alt="" /></SwiperSlide>
-
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteRoxo.png`} alt="" /></SwiperSlide>
-
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteTurquesa.png`} alt="" /></SwiperSlide>
                             </Swiper>
                         </div>
@@ -55,13 +54,13 @@ export function ProductPage() {
                     </div>
                     
                     <div className="information-purchase-and-terms">
-
                         <div className="information">
                             <div className="name-sku-product">
                                 <h2>TrackMate 0.4 XE</h2>
                                 <h5>SKU: 0001</h5>
                             </div>
                             <h3 className="value">R$ 85,00</h3>
+                            
                             <div className="bracelet-colors">
                                 <h5>Cor *:<span className='choosed-color'>{color}</span></h5>
                                 <div className="choose-color">
@@ -73,11 +72,12 @@ export function ProductPage() {
                                             }}
                                             checked={color === 'Branco'}
                                         />
+
                                         <label htmlFor="white" className="labels label-white"></label>
                                         <span className="tooltip">Branco</span>
-                                        </div>
+                                    </div>
 
-                                        <div className="color-tooltip">
+                                    <div className="color-tooltip">
                                         <input type="radio" className="colors" id="black" name="color"
                                             onChange={() => {
                                             setColor('Preto');
@@ -87,9 +87,9 @@ export function ProductPage() {
                                         />
                                         <label htmlFor="black" className="labels label-black"></label>
                                         <span className="tooltip">Preto</span>
-                                        </div>
+                                    </div>
 
-                                        <div className="color-tooltip">
+                                    <div className="color-tooltip">
                                         <input type="radio" className="colors" id="blue" name="color"
                                             onChange={() => {
                                             setColor('Azul');
@@ -99,9 +99,9 @@ export function ProductPage() {
                                         />
                                         <label htmlFor="blue" className="labels label-blue"></label>
                                         <span className="tooltip">Azul</span>
-                                        </div>
+                                    </div>
 
-                                        <div className="color-tooltip">
+                                    <div className="color-tooltip">
                                         <input type="radio" className="colors" id="purple" name="color"
                                             onChange={() => {
                                             setColor('Roxo');
@@ -111,9 +111,9 @@ export function ProductPage() {
                                         />
                                         <label htmlFor="purple" className="labels label-purple"></label>
                                         <span className="tooltip">Roxo</span>
-                                        </div>
+                                    </div>
 
-                                        <div className="color-tooltip">
+                                    <div className="color-tooltip">
                                         <input type="radio" className="colors" id="turquoise" name="color"
                                             onChange={() => {
                                             setColor('Turquesa');
