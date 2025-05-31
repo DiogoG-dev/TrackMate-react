@@ -1,13 +1,22 @@
 import './ProductPage.css'
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Question } from '../../components/common/Question/Question.jsx';
 import termsData from '../../data/terms.json';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 
 export function ProductPage() {
     const [color, setColor] = useState('Branco');
     const [amount, setAmount] = useState(1);
+    const swiperRef = useRef(null);
+
+    const handleGoToSlide = (index) => {
+        if (swiperRef.current && swiperRef.current.swiper) {
+            swiperRef.current.swiper.slideTo(index);
+        }
+    };
 
     return (
         <>
@@ -30,6 +39,17 @@ export function ProductPage() {
                                 <input type="radio" className='bracelet-colors' id='bracelet-turquoise' name='bracelet-color' onClick={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/bracelets/braceleteTurquesa.png"} />
                                 <label htmlFor="bracelet-turquoise" className='bracelet-labels bracelet-label-turquoise'></label>
                             </div>
+                            <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="mySwiper" ref={swiperRef} >
+                                <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteBranco.png`} alt="" /></SwiperSlide>
+
+                                <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceletePreto.png`} alt="" /></SwiperSlide>
+
+                                <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteAzul.png`} alt="" /></SwiperSlide>
+
+                                <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteRoxo.png`} alt="" /></SwiperSlide>
+
+                                <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteTurquesa.png`} alt="" /></SwiperSlide>
+                            </Swiper>
                         </div>
                         <div className="product-description-desktop">O TrackMate 0.4 XE tem pulseira de silicone ajustável, é leve e resistente. Evite calor e água excessivos. Limpe com pano seco, carregue apenas com o cabo magnético incluso e utilize o app TrackMate Health para configurar e acompanhar seus dados.</div>
                     </div>
@@ -46,28 +66,62 @@ export function ProductPage() {
                                 <h5>Cor *:<span className='choosed-color'>{color}</span></h5>
                                 <div className="choose-color">
                                     <div className="color-tooltip">
-                                        <input type="radio" className="colors" id="white" name="color" onChange={() => setColor('Branco')} checked={color === 'Branco'}/>
+                                        <input type="radio" className="colors" id="white" name="color"
+                                            onChange={() => {
+                                            setColor('Branco');
+                                            handleGoToSlide(0);
+                                            }}
+                                            checked={color === 'Branco'}
+                                        />
                                         <label htmlFor="white" className="labels label-white"></label>
                                         <span className="tooltip">Branco</span>
-                                    </div>
-                                    <div className="color-tooltip">
-                                        <input type="radio" className='colors' id='black' name='color' onClick={() => setColor('Preto')} />
-                                        <label htmlFor="black" className='labels label-black'></label>
+                                        </div>
+
+                                        <div className="color-tooltip">
+                                        <input type="radio" className="colors" id="black" name="color"
+                                            onChange={() => {
+                                            setColor('Preto');
+                                            handleGoToSlide(1);
+                                            }}
+                                            checked={color === 'Preto'}
+                                        />
+                                        <label htmlFor="black" className="labels label-black"></label>
                                         <span className="tooltip">Preto</span>
-                                    </div>
-                                    <div className="color-tooltip">
-                                        <input type="radio" className='colors' id='blue' name='color' onClick={() => setColor('Azul')} />
-                                        <label htmlFor="blue" className='labels label-blue'></label>
+                                        </div>
+
+                                        <div className="color-tooltip">
+                                        <input type="radio" className="colors" id="blue" name="color"
+                                            onChange={() => {
+                                            setColor('Azul');
+                                            handleGoToSlide(2);
+                                            }}
+                                            checked={color === 'Azul'}
+                                        />
+                                        <label htmlFor="blue" className="labels label-blue"></label>
                                         <span className="tooltip">Azul</span>
-                                    </div>
-                                    <div className="color-tooltip">
-                                        <input type="radio" className='colors' id='purple' name='color' onClick={() => setColor('Roxo')} />
-                                        <label htmlFor="purple" className='labels label-purple'></label>
+                                        </div>
+
+                                        <div className="color-tooltip">
+                                        <input type="radio" className="colors" id="purple" name="color"
+                                            onChange={() => {
+                                            setColor('Roxo');
+                                            handleGoToSlide(3);
+                                            }}
+                                            checked={color === 'Roxo'}
+                                        />
+                                        <label htmlFor="purple" className="labels label-purple"></label>
                                         <span className="tooltip">Roxo</span>
-                                    </div>
-                                    <div className="color-tooltip">
-                                        <input type="radio" className='colors' id='turquoise' name='color' onClick={() => setColor('Turquesa')} />
-                                        <label htmlFor="turquoise" className='labels label-turquoise'></label>
+                                        </div>
+
+                                        <div className="color-tooltip">
+                                        <input type="radio" className="colors" id="turquoise" name="color"
+                                            onChange={() => {
+                                            setColor('Turquesa');
+                                            handleGoToSlide(4);
+                                            }}
+                                            checked={color === 'Turquesa'}
+                                        />
+                                        <label htmlFor="turquoise" className="labels label-turquoise"></label>
                                         <span className="tooltip">Turquesa</span>
                                     </div>
                                 </div>

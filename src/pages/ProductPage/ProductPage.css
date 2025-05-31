@@ -22,6 +22,10 @@
     width: 50%;
 }
 
+.swiper {
+    display: none;
+}
+
 .main-image{
     width: 100%;
 }
@@ -297,38 +301,23 @@
     }
 
     .product-apresentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
     }
 
-    .bracelet-labels {
-        width: 22px;
-        height: 22px;
-        border-radius: 50%;
-        border: 1px solid rgb(150, 150, 150);
-        margin-right: 7px;
+    .main-image, .image-carousel {
+        display: none;
+    }
+    
+    .swiper {
+        display: block;
+        width: 355px;
     }
 
-    .bracelet-labels::before {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-    }
-
-    .bracelet-label-white::before,
-    .bracelet-label-black::before,
-    .bracelet-label-blue::before,
-    .bracelet-label-purple::before,
-    .bracelet-label-turquoise::before {
-        background-image: none;
-    }
-
-    .bracelet-colors:checked + .bracelet-label-white,
-    .bracelet-colors:checked + .bracelet-label-black,
-    .bracelet-colors:checked + .bracelet-label-blue,
-    .bracelet-colors:checked + .bracelet-label-purple,
-    .bracelet-colors:checked + .bracelet-label-turquoise {
-        background-color: rgb(150, 150, 150);
-        border-radius: 50%;
+    .swiper-pagination-bullet-active {
+        background-color: var(--bg-color-2);
     }
 
     .information-purchase-and-terms {
