@@ -35,8 +35,9 @@ footer .links {
     cursor: pointer;
 }
 
-.list-media li a {
+.list-media li a, .list-legal li {
     text-decoration: underline;
+    text-underline-offset: 0.2rem;
 }
 
 .list-legal li {
