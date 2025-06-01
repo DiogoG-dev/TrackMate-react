@@ -1,7 +1,7 @@
-import './ProductPage.css'
-import './ProductApresentation.css'
-import './InformationPurchaseAndTerms.css'
-import './BraceletDetails.css'
+import './ProductPage.css';
+import './ProductApresentation.css';
+import './InformationPurchaseAndTerms.css';
+import './BraceletDetails.css';
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 import { useState, useRef } from 'react';
@@ -152,19 +152,19 @@ export function ProductPage() {
                             ))}
                         </div>
                     </div>
-                    <div className="bracelet-details" style={{ display: showDetails ? 'flex' : 'none' }}>
-                        <div className="close-details"  onClick={() => setShowDetails(false)}>
-                            <div className="bar1"></div>
-                            <div className="bar2"></div>
-                        </div>
-                        <Swiper pagination={{ clickable: true }} modules={[Pagination, Navigation]} navigation={true} className="swiper-details" >
-                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteBranco.png`} alt="Branco" /></SwiperSlide>
-                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceletePreto.png`} alt="Preto" /></SwiperSlide>
-                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteAzul.png`} alt="Azul" /></SwiperSlide>
-                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteRoxo.png`} alt="Roxo" /></SwiperSlide>
-                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteTurquesa.png`} alt="Turquesa" /></SwiperSlide>
-                        </Swiper>
+                </div>
+                <div className="bracelet-details" style={{ display: showDetails ? 'flex' : 'none' }}>
+                    <div className="close-details"  onClick={() => setShowDetails(false)}>
+                        <div className="bar1"></div>
+                        <div className="bar2"></div>
                     </div>
+                    <Swiper pagination={{ clickable: true }} modules={[Pagination, Navigation]} navigation={true} className="swiper-details" >
+                        <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteBranco.png`} alt="Branco" /></SwiperSlide>
+                        <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceletePreto.png`} alt="Preto" /></SwiperSlide>
+                        <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteAzul.png`} alt="Azul" /></SwiperSlide>
+                        <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteRoxo.png`} alt="Roxo" /></SwiperSlide>
+                        <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteTurquesa.png`} alt="Turquesa" /></SwiperSlide>
+                    </Swiper>
                 </div>
             </main>
             <Footer />

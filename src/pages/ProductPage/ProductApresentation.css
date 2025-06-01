@@ -86,7 +86,7 @@
 .bracelet-label-purple:hover,
 .bracelet-label-turquoise:hover {
     transition: 0.5s;
-    background-color: rgba(100, 100, 100, 0.3);
+    background-color: var(--bg-color-10);
     border-radius: 3px;
 }
 

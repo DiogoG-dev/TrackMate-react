@@ -68,27 +68,27 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid var(--color-2);
 }
 .labels:hover {
-    border: 1px solid white;
+    border: 1px solid var(--color-2);
 }
 
 /* Adicionando Cor de Fundo de Acordo com sua Respectiva Imagem Central */
 .label-white::before {
-    background-color: white;
+    background-color: var(--bg-color-3);
 }
 .label-black::before {
-    background-color: black;
+    background-color: var(--bg-color-5);
 }
 .label-blue::before {
-    background-color: blue;
+    background-color: var(--bg-color-7);
 }
 .label-purple::before {
-    background-color: purple;
+    background-color: var(--bg-color-8);
 }
 .label-turquoise::before {
-    background-color: turquoise;
+    background-color: var(--bg-color-9);
 }
 
 .colors:checked + .label-white,
@@ -96,7 +96,7 @@
 .colors:checked + .label-blue,
 .colors:checked + .label-purple,
 .colors:checked + .label-turquoise {
-    border: 1px solid white;
+    border: 1px solid var(--color-2);
 }
 
 /* Caixa que Informa a Cor do Relógio */
@@ -132,18 +132,18 @@
     justify-content: center;
     width: 35px;
     height: 35px;
-    background-color: white;
+    background-color: var(--bg-color-3);
     font-size: 16px;
-    color: black;
+    color: var(--color-4);
     border: none;
 }
 
 .minus i, .plus i {
-    color: rgb(100, 100, 100);
+    color: var(--color-5);
 }
 
 .minus-gray i {
-    color: rgb(200, 200, 200);
+    color: var(--color-6);
 }
 
 

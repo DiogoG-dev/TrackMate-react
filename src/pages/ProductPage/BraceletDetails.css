@@ -8,7 +8,7 @@
 }
 
 .close-details .bar1, .close-details .bar2 {
-    background-color: white;
+    background-color: var(--bg-color-3);
     height: 2px;
     width: 24px;
 }
