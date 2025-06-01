@@ -1,17 +1,19 @@
 import './ProductPage.css'
 import './ProductApresentation.css'
 import './InformationPurchaseAndTerms.css'
+import './BraceletDetails.css'
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 import { useState, useRef } from 'react';
 import { Question } from '../../components/common/Question/Question.jsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
 import termsData from '../../data/terms.json';
 
 export function ProductPage() {
     const [color, setColor] = useState('Branco');
     const [amount, setAmount] = useState(1);
+    const [showDetails, setShowDetails] = useState(false);
     const swiperRef = useRef(null);
 
     const handleGoToSlide = (index) => {
@@ -28,7 +30,7 @@ export function ProductPage() {
 
                     <div className="product-apresentation">
                         <div className="product-apresentation-image">
-                            <div className="main-image"><img className='bracelet-color' id='bracelet-color' src={`/TrackMate-react/imgs/bracelets/bracelete${color}.png`} alt="" /></div>
+                            <div className="main-image"><img className='bracelet-color' id='bracelet-color' src={`/TrackMate-react/imgs/bracelets/bracelete${color}.png`}  onClick={() => setShowDetails(true)} alt="" /></div>
                             <div className="image-carousel">
                                 <input type="radio" className="bracelet-colors" id="bracelet-white" name="bracelet-color" onChange={() => document.getElementById('bracelet-color').src = "/TrackMate-react/imgs/bracelets/braceleteBranco.png"} />
                                 <label htmlFor="bracelet-white" className="bracelet-labels bracelet-label-white"></label>
@@ -42,7 +44,7 @@ export function ProductPage() {
                                 <label htmlFor="bracelet-turquoise" className='bracelet-labels bracelet-label-turquoise'></label>
                             </div>
 
-                            <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="swiper-product-apresentation" ref={swiperRef} >
+                            <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="swiper-product-apresentation" ref={swiperRef} onClick={() => setShowDetails(true)} >
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteBranco.png`} alt="" /></SwiperSlide>
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceletePreto.png`} alt="" /></SwiperSlide>
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteAzul.png`} alt="" /></SwiperSlide>
@@ -149,6 +151,19 @@ export function ProductPage() {
                                 response={item.information} />
                             ))}
                         </div>
+                    </div>
+                    <div className="bracelet-details" style={{ display: showDetails ? 'flex' : 'none' }}>
+                        <div className="close-details"  onClick={() => setShowDetails(false)}>
+                            <div className="bar1"></div>
+                            <div className="bar2"></div>
+                        </div>
+                        <Swiper pagination={{ clickable: true }} modules={[Pagination, Navigation]} navigation={true} className="swiper-details" >
+                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteBranco.png`} alt="Branco" /></SwiperSlide>
+                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceletePreto.png`} alt="Preto" /></SwiperSlide>
+                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteAzul.png`} alt="Azul" /></SwiperSlide>
+                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteRoxo.png`} alt="Roxo" /></SwiperSlide>
+                            <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteTurquesa.png`} alt="Turquesa" /></SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
             </main>

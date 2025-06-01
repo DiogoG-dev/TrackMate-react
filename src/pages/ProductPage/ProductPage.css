@@ -16,7 +16,18 @@
     width: 950px;
 }
 
-
+/* Aba de Detalhes do Bracelete */
+.bracelet-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: var(--bg-color-5);
+}
 
 /* Responsividade Mobile */
 @media (max-width: 768px) {

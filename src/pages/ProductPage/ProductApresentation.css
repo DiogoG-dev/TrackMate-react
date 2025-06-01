@@ -10,6 +10,7 @@
 /* Container que Armazena a Imagem Mostrada para Desktop */
 .main-image {
     width: 100%;
+    cursor: zoom-in;
 }
 
 /* Imagem Mostrada */

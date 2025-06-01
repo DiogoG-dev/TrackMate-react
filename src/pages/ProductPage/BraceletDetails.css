@@ -1,0 +1,75 @@
+/* Botão para Fechar o Card de Detalhes */
+.close-details {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 8px 3px 0 3px;
+    cursor: pointer;
+}
+
+.close-details .bar1, .close-details .bar2 {
+    background-color: white;
+    height: 2px;
+    width: 24px;
+}
+
+.close-details .bar1 {
+    transform: rotate(-45deg);
+}
+
+.close-details .bar2 {
+    transform: translate(0, -0.533rem) rotate(45deg);
+}
+
+
+
+/* Carrossel de Imagens */
+.swiper-details {
+    width: 45%;
+}
+
+/* Desativando os Bullets para Desktop */
+.swiper-details .swiper-pagination-bullet-active,
+.swiper-details .swiper-pagination-bullet {
+    display: none;
+}
+
+/* Deixando Prev e Next Brancos */
+.swiper-details .swiper-button-prev,
+.swiper-details .swiper-button-next {
+    color: var(--bg-color-3);
+}
+
+
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .close-details{
+        top: 25px;
+        right: 25px;
+    }
+
+    .swiper-details {
+        width: 100%;
+        height: 65%;
+    }
+
+    .swiper-details .swiper-slide img {
+        transform: scale(1.4);
+    }
+
+    .swiper-details .swiper-slide img:hover {
+        transform: scale(1.4);
+    }
+
+    .swiper-details .swiper-pagination-bullet-active,
+    .swiper-details .swiper-pagination-bullet {
+        display: inline-block;
+        background-color: var(--bg-color-3);
+    }
+
+    .swiper-details .swiper-button-prev,
+    .swiper-details .swiper-button-next {
+        display: none;
+    }
+}
