@@ -8,12 +8,12 @@
 }
 
 /* Container que Armazena a Imagem Mostrada para Desktop */
-.main-image{
+.main-image {
     width: 100%;
 }
 
 /* Imagem Mostrada */
-.bracelet-color{
+.bracelet-color {
     width: 100%;
 }
 
@@ -92,7 +92,7 @@
 
 
 /* Ocultando o Swiper para Desktop */
-.swiper {
+.swiper-product-apresentation {
     display: none;
 }
 
@@ -122,12 +122,12 @@
         display: none;
     }
     
-    .swiper {
+    .swiper-product-apresentation {
         display: block;
         width: 355px;
     }
 
-    .swiper-pagination-bullet-active {
+    .swiper-product-apresentation .swiper-pagination-bullet-active {
         background-color: var(--bg-color-2);
     }
 

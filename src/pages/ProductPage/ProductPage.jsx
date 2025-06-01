@@ -42,7 +42,7 @@ export function ProductPage() {
                                 <label htmlFor="bracelet-turquoise" className='bracelet-labels bracelet-label-turquoise'></label>
                             </div>
 
-                            <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="mySwiper" ref={swiperRef} >
+                            <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="swiper-product-apresentation" ref={swiperRef} >
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteBranco.png`} alt="" /></SwiperSlide>
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceletePreto.png`} alt="" /></SwiperSlide>
                                 <SwiperSlide><img className='bracelet-color' src={`/TrackMate-react/imgs/bracelets/braceleteAzul.png`} alt="" /></SwiperSlide>
