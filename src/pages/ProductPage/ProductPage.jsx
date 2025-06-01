@@ -22,6 +22,20 @@ export function ProductPage() {
         }
     };
 
+    const item = { color: color, amount: amount, price: amount * 85}
+
+    function setItem() {
+    const itemSeted = JSON.parse(localStorage.getItem(`${color}`));
+
+    if (itemSeted) {
+        itemSeted.amount += item.amount;
+        itemSeted.price += item.price;
+        localStorage.setItem(`${color}`, JSON.stringify(itemSeted));
+    } else {
+        localStorage.setItem(`${color}`, JSON.stringify(item));
+    }
+}
+
     return (
         <>
             <Header />
@@ -138,7 +152,7 @@ export function ProductPage() {
                             </div>
                         </div>
 
-                        <button className='add-to-bag'>Adicionar a sacola</button>
+                        <button className='add-to-bag' onClick={() => setItem()}>Adicionar a sacola</button>
                         <div className="product-description-mobile">O TrackMate 0.4 XE tem pulseira de silicone ajustável, é leve e resistente. Evite calor e água excessivos. Limpe com pano seco, carregue apenas com o cabo magnético incluso e utilize o app TrackMate Health para configurar e acompanhar seus dados.</div>
                         <div className="terms">
                             {termsData.map((item, index) => (
