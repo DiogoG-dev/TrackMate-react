@@ -33,13 +33,13 @@
     flex-direction: row;
     align-items: start;
     padding: 20px 0;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid var(--bg-color-11);
+    border-bottom: 1px solid var(--bg-color-11);
 }
 
 .items .img-item {
     width: 100px;
-    border: 1px solid gray;
+    border: 1px solid var(--bg-color-11);
 }
 
 .info-item {
@@ -54,17 +54,41 @@
 }
 
 .info-item .unit-value, .info-item .color {
-    font-size: 14px;
+    font-size: 13px;
+    margin-top: 10px;
 }
 
-.items .amount {
-    font-size: 14px;
-    margin-left: 100px;
+.items .choose-amount {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 75px;
+    border: 1px solid var(--color-2);
+}
+
+.choose-amount .minus, .choose-amount .amount, .choose-amount .plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--bg-color-1);
+    font-size: 12px;
+    color: var(--color-2);
+    border: none;
+}
+
+.minus i, .plus i {
+    color: var(--color-2);
+}
+
+.minus-gray i {
+    color: var(--color-6);
 }
 
 .items .total-value-item {
     margin: 0 50px;
 }
+
 
 .bag-items .promotional-code, .bag-items .observations {
     display: flex;
@@ -75,6 +99,7 @@
 .promotional-code .label-promotional-code, .observations .label-observations {
     font-size: 14px;
     color: var(--color-3);
+    cursor: pointer;
 }
 
 .promotional-code .input-button-promotional-code {
@@ -92,8 +117,9 @@
     caret-color: var(--color-1);
     padding-left: 10px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 900;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .input-button-promotional-code .input-promocional-code:focus {
@@ -105,6 +131,7 @@
     background-color: var(--bg-color-2);
     border: none;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .observations .label-observations {
@@ -115,9 +142,10 @@
     width: 325px;
     height: 100px;
     background-color: var(--bg-color-1);
-    border: 1px solid gray;
+    border: 1px solid var(--bg-color-11);
     resize: none;
     padding: 10px;
+    font-size: 16px;
 }
 
 .observations .input-observations:focus {
@@ -137,7 +165,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    border-top: 1px solid gray;
+    border-top: 1px solid var(--bg-color-11);
     padding: 20px 0 20px 0;
 }
 
@@ -155,7 +183,7 @@
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 20px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--bg-color-11);
     text-decoration: underline;
 }
 
@@ -165,7 +193,9 @@
     justify-content: space-between;
     width: 100%;
     margin-top: 20px;
+    font-size: 18px;
 }
+
 
 .pay-button {
     font-size: 16px;
@@ -183,3 +213,6 @@
     text-align: center;
 }
 
+.secure-checkout .fa-lock {
+    margin-right: 5px;
+}
