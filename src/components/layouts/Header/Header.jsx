@@ -38,7 +38,7 @@ export function Header() {
                 <div className="nav-contents">
                     <Link to={'/faq'} className="faq">FAQ</Link>
                     <Link to={'pageNotFound'} className="login"><i className="fa-solid fa-user"></i>Login</Link>
-                    <Link to={'pageNotFound'} className="bag"><i className="fa-solid fa-bag-shopping"></i></Link>
+                    <Link to={'/bag'} className="bag"><i className="fa-solid fa-bag-shopping"></i></Link>
                     <BuyButton />
                     <div className="menu-hamburguer">
                         <div className="bar1"></div>

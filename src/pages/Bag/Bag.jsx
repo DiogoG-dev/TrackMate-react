@@ -2,19 +2,20 @@ import './Bag.css';
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 import { Item } from '../../components/common/Item/Item.jsx';
-import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export function Bag() {
     const [haveItems, setHaveItems] = useState();
 
     useEffect(() => {
         if (localStorage.length > 0) {
-            setHaveItems(true)
+            setHaveItems(true);
         } else {
-            setHaveItems(false)
+            setHaveItems(false);
         }
     }, [])
+    
     return (
         <>
             <Header />
@@ -56,7 +57,7 @@ export function Bag() {
                     <h2 className='my-bag'>Minha Sacola</h2>
                     <div className="empty-bag-content">
                         <h3 className='empty-bag-title'>A sacola está vazia</h3>
-                        <Link to='/homePage' className='continue-browsing'>Continuar navegando</Link>
+                        <Link to='/' className='continue-browsing'>Continuar navegando</Link>
                     </div>
                 </div>
             </div>
