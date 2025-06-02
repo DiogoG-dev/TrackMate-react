@@ -1,0 +1,66 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 20px 0;
+    border-top: 1px solid var(--bg-color-11);
+    border-bottom: 1px solid var(--bg-color-11);
+}
+
+.item .img-item {
+    width: 100px;
+    border: 1px solid var(--bg-color-11);
+}
+
+.item .info-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.item .info-item h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.item .info-item .unit-value, .item .info-item .color {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.item .choose-amount {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 75px;
+    border: 1px solid var(--color-2);
+}
+
+.item .choose-amount .minus, .item .choose-amount .amount, .item .choose-amount .plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--bg-color-1);
+    font-size: 12px;
+    color: var(--color-2);
+    border: none;
+}
+
+.item .choose-amount .minus i, .item .choose-amount .plus i {
+    color: var(--color-2);
+}
+
+.item .choose-amount .minus-gray i {
+    color: var(--color-6);
+}
+
+.item .total-value-item {
+    margin: 0 50px;
+    width: 100px;
+    text-align: center;
+}
+
+.item .trash {
+    cursor: pointer;
+}

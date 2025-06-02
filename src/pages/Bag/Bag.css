@@ -7,12 +7,14 @@
     background-color: var(--bg-color-1);
 }
 
-.bag-content {
+
+.bag-content, .empty-bag-container {
     display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
     width: 950px;
+    min-height: 400px;
 }
 
 .bag-items {
@@ -22,75 +24,10 @@
     justify-content: center;
 }
 
-.bag-items h2, .order-summary h2 {
+.bag-items .my-bag, .order-summary h2, .empty-bag-container .my-bag{
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
-}
-
-.bag-items .item {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    padding: 20px 0;
-    border-top: 1px solid var(--bg-color-11);
-    border-bottom: 1px solid var(--bg-color-11);
-}
-
-.items .img-item {
-    width: 100px;
-    border: 1px solid var(--bg-color-11);
-}
-
-.info-item {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-
-.info-item h3 {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.info-item .unit-value, .info-item .color {
-    font-size: 13px;
-    margin-top: 10px;
-}
-
-.items .choose-amount {
-    display: flex;
-    flex-direction: row;
-    margin: 0 0 0 75px;
-    border: 1px solid var(--color-2);
-}
-
-.item .choose-amount .minus, .item .choose-amount .amount, .item .choose-amount .plus {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25px;
-    height: 25px;
-    background-color: var(--bg-color-1);
-    font-size: 12px;
-    color: var(--color-2);
-    border: none;
-}
-
-.item .choose-amount .minus i, .item .choose-amount .plus i {
-    color: var(--color-2);
-}
-
-.item .choose-amount .minus-gray i {
-    color: var(--color-6);
-}
-
-.items .total-value-item {
-    margin: 0 50px;
-}
-
-.trash {
-    cursor: pointer;
 }
 
 .bag-items .promotional-code, .bag-items .observations {
@@ -218,4 +155,34 @@
 
 .secure-checkout .fa-lock {
     margin-right: 5px;
+}
+
+.empty-bag-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.empty-bag-container .my-bag {
+    width: 100%;
+}
+
+.empty-bag-container .empty-bag-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--bg-color-11);
+    border-bottom: 1px solid var(--bg-color-11);
+    width: 100%;
+    height: 400px;
+}
+
+.empty-bag-container .empty-bag-content .empty-bag-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.empty-bag-container .empty-bag-content .continue-browsing {
+    font-size: 14px;
+    text-decoration: underline;
 }
