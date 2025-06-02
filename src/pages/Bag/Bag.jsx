@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export function Bag() {
-    const [haveItems, setHaveItems] = useState();
+    const [haveItems, setHaveItems] = useState(0);
+    const [totalValue, setTotalValue] = useState(0);
 
     useEffect(() => {
         if (localStorage.length > 0) {
@@ -15,7 +16,21 @@ export function Bag() {
             setHaveItems(false);
         }
     }, [])
+
     
+
+    useEffect(() => {
+        let total = 0;
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            const item = JSON.parse(localStorage.getItem(key));
+            total += item.price;
+        }
+
+        setTotalValue(total)
+    }, [])
+
     return (
         <>
             <Header />
@@ -42,12 +57,12 @@ export function Bag() {
                         <h2>Resumo do Pedido</h2>
                         <div className="subtotal">
                             <h3>Subtotal</h3>
-                            <span className="subtotal-value">R$ 85,00</span>
+                            <span className="subtotal-value">R$ {totalValue.toFixed(2)}</span>
                         </div>
                         <h3 className='estimated-delivery'>Estimar Entrega</h3>
                         <div className='total-container'>
                             <h2>Total</h2>
-                            <span className="total-value">R$ 85,00</span>
+                            <span className="total-value">R$ {totalValue.toFixed(2)}</span>
                         </div>
                         <button className='pay-button'>Pagar Agora</button>
                         <span className='secure-checkout'><i className="fa-solid fa-lock"></i>Checkout Seguro</span>
