@@ -28,7 +28,7 @@
     margin-bottom: 20px;
 }
 
-.bag-items .items {
+.bag-items .item {
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -65,7 +65,7 @@
     border: 1px solid var(--color-2);
 }
 
-.choose-amount .minus, .choose-amount .amount, .choose-amount .plus {
+.item .choose-amount .minus, .item .choose-amount .amount, .item .choose-amount .plus {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,11 +77,11 @@
     border: none;
 }
 
-.minus i, .plus i {
+.item .choose-amount .minus i, .item .choose-amount .plus i {
     color: var(--color-2);
 }
 
-.minus-gray i {
+.item .choose-amount .minus-gray i {
     color: var(--color-6);
 }
 
@@ -89,6 +89,9 @@
     margin: 0 50px;
 }
 
+.trash {
+    cursor: pointer;
+}
 
 .bag-items .promotional-code, .bag-items .observations {
     display: flex;

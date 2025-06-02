@@ -7,7 +7,7 @@ import { DeliveriesReturns } from '../pages/DeliveriesReturns/DeliveriesReturns.
 import { PrivacyPolicy } from '../pages/PrivacyPolicy/PrivacyPolicy.jsx';
 import { Faq } from '../pages/Faq/Faq.jsx';
 import { ProductPage } from '../pages/ProductPage/ProductPage.jsx';
-import { BagCard } from '../components/common/BagCard/BagCard.jsx';
+import { Bag } from '../pages/Bag/Bag.jsx';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path='/privacyPolicy' element={<PrivacyPolicy />} />
         <Route path='/faq' element={<Faq />} />
         <Route path='/productPage' element={<ProductPage />} />
-        <Route path='/bag' element={<BagCard />} />
+        <Route path='/bag' element={<Bag />} />
       </Routes>
     </>
   )
