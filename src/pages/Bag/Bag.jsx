@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export function Bag() {
+    const [showPromoCode, setShowPromoCode] = useState(false);
+    const [showObservation, setShowObservation] = useState(false);
     const [haveItems, setHaveItems] = useState(0);
     const [totalValue, setTotalValue] = useState(0);
 
@@ -16,8 +18,6 @@ export function Bag() {
             setHaveItems(false);
         }
     }, [])
-
-    
 
     useEffect(() => {
         let total = 0;
@@ -42,15 +42,15 @@ export function Bag() {
                             <Item />
                         </div>
                         <div className='promotional-code'>
-                            <label className="label-promotional-code">Insira o código promocional</label>
-                            <div className="input-button-promotional-code">
+                            <label className="label-promotional-code" onClick={() => setShowPromoCode(!showPromoCode)}>Insira o código promocional</label>
+                            { showPromoCode && <div className="input-button-promotional-code">
                                 <input type="text" className="input-promocional-code" />
                                 <button className="enter-promocional-code">OK</button>
-                            </div>
+                            </div>}
                         </div>
                         <div className="observations">
-                            <label className="label-observations">Adicione uma observação</label>
-                            <textarea type="text" className="input-observations" placeholder='Por exemplo: Não entregar na terça'/>
+                            <label className="label-observations" onClick={() => setShowObservation(!showObservation)}>Adicione uma observação</label>
+                            { showObservation && <textarea type="text" className="input-observations" placeholder='Por exemplo: Não entregar na terça'/> }
                         </div>
                     </div>
                     <div className="order-summary">
