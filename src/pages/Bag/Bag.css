@@ -186,3 +186,50 @@
     font-size: 14px;
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .bag-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 125px 0 50px 0;
+        background-color: var(--bg-color-1);
+    }
+
+    .bag-content, .empty-bag-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        min-height: 400px;
+    }
+
+    .bag-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bag-items .my-bag {
+        width: 100%;
+    }
+
+    .items {
+        width: 100%;
+    }
+
+    .order-summary {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .order-summary .title {
+        display: none;
+    }
+
+    .promotional-code, .observations {
+        width: 100%;
+    }
+}

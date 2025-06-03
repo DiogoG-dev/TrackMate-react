@@ -54,7 +54,7 @@ export function Bag() {
                         </div>
                     </div>
                     <div className="order-summary">
-                        <h2>Resumo do Pedido</h2>
+                        <h2 className='title'>Resumo do Pedido</h2>
                         <div className="subtotal">
                             <h3>Subtotal</h3>
                             <span className="subtotal-value">R$ {totalValue.toFixed(2)}</span>

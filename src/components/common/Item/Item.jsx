@@ -42,19 +42,23 @@ export function Item() {
         <>
             {Object.entries(items).map(([key, item]) => (
                 <div key={key} className="item">
-                    <Link to="/productPage"><img src={`/TrackMate-react/imgs/bracelets/bracelete${item.color}.png`} alt="" className="img-item" /></Link>
-                    <div className="info-item">
-                        <h3><Link to="/productPage">TrackMate 0.4 XE</Link></h3>
-                        <span className='unit-value'>R$ 85.00</span>
-                        <span className="color">Cor: {item.color}</span>
-                    </div>
-                    <div className="choose-amount">
-                            <button className={`minus ${item.amount === 1 ? 'minus-gray' : ''}`} id="minus" onClick={() => setItem(item.color, 'less')} disabled={item.amount === 1}><i className="fa-solid fa-minus"></i></button>
-                            <div className="amount">{item.amount}</div>
-                            <button className="plus" onClick={() => setItem(item.color, 'plus')}><i className="fa-solid fa-plus"></i></button>
+                    <div className="item-content">
+                        <Link to="/productPage"><img src={`/TrackMate-react/imgs/bracelets/bracelete${item.color}.png`} alt="" className="img-item" /></Link>
+                        <div className="info-item">
+                            <h3><Link to="/productPage">TrackMate 0.4 XE</Link></h3>
+                            <span className='unit-value'>R$ 85.00</span>
+                            <span className="color">Cor: {item.color}</span>
                         </div>
-                    <div className="total-value-item">R$ {item.price.toFixed(2)}</div>
-                    <div className="trash" onClick={() => setItem(item.color, 'delete')}><i className="fas fa-trash"></i></div>
+                    </div>
+                    <div className="item-info">
+                        <div className="choose-amount">
+                                <button className={`minus ${item.amount === 1 ? 'minus-gray' : ''}`} id="minus" onClick={() => setItem(item.color, 'less')} disabled={item.amount === 1}><i className="fa-solid fa-minus"></i></button>
+                                <div className="amount">{item.amount}</div>
+                                <button className="plus" onClick={() => setItem(item.color, 'plus')}><i className="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div className="total-value-item">R$ {item.price.toFixed(2)}</div>
+                        <div className="trash" onClick={() => setItem(item.color, 'delete')}><i className="fas fa-trash"></i></div>
+                    </div>
                 </div>
             ))}
         </>

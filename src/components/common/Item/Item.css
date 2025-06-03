@@ -7,6 +7,10 @@
     border-bottom: 1px solid var(--bg-color-11);
 }
 
+.item-content {
+    display: flex;
+}
+
 .item .img-item {
     width: 100px;
     border: 1px solid var(--bg-color-11);
@@ -63,4 +67,43 @@
 
 .item .trash {
     cursor: pointer;
+}
+
+.item-info {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .item-content {
+        flex-direction: row;
+    }
+
+    .item .img-item {
+        width: 75px;
+    }
+
+    .item .total-value-item {
+        margin: 0 25px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .item .choose-amount {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        border: 1px solid var(--color-2);
+    }
+    .item-info {
+        width: 100%;
+        align-items: center;
+        justify-content: end;
+    }
 }
