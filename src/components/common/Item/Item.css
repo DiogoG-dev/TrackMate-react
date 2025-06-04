@@ -68,12 +68,12 @@
     border: none;
 }
 
-.choose-amount .minus i,
-.choose-amount .plus i {
+.choose-amount-total-value .choose-amount .minus i,
+.choose-amount-total-value .choose-amount .plus i {
     color: var(--color-2);
 }
 
-.choose-amount .minus-gray i {
+.choose-amount-total-value .choose-amount .minus-gray i {
     color: var(--color-6);
 }
 
