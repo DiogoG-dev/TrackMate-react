@@ -64,7 +64,7 @@ export function Bag() {
                             <h2>Total</h2>
                             <span className="total-value">R$ {totalValue.toFixed(2)}</span>
                         </div>
-                        <button className='pay-button'>Pagar Agora</button>
+                        <Link to="/pageNotFound" className='pay-button'>Pagar Agora</Link>
                         <span className='secure-checkout'><i className="fa-solid fa-lock"></i>Checkout Seguro</span>
                     </div>
                 </div>
