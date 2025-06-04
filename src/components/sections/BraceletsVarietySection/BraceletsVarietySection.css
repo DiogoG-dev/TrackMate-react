@@ -9,7 +9,7 @@
     height: 150vh;
     background-color: var(--bg-color-1);
     background-image: url('/TrackMate-react/imgs/backgrounds/bgLineGradient.avif');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -61,10 +61,16 @@
     width: 100%;
 }
 
+.bracelets-variety-section .buy-button {
+    margin-bottom: 50px;
+}
+
 @media (max-width: 768px) {
+
     .bracelets-variety-section {
         height: 100vh;
         background-position: 0% 67%;
+        background-size: contain;
     }
 
     .bracelets-variety-section .buy-button {
@@ -96,5 +102,9 @@
 
     .bracelets-img {
         width: 360px;
+    }
+
+    .bracelets-variety-section .buy-button {
+        margin-bottom: 10px;
     }
 }
