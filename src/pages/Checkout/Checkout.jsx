@@ -1,11 +1,10 @@
 import './Checkout.css';
-import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 
 export function Checkout() {
     return (
         <>
-            <Header />
+            <header className='header-checkout-container'></header>
             <main className='checkout-container'>
                 <div className="checkout-content">
                     <div className="checkout-flow-container">
@@ -36,7 +35,7 @@ export function Checkout() {
                     </div>
                 </div>
             </main>
-            <Footer />
+            <footer className='footer-checkout-container'></footer>
         </>
     )
 }

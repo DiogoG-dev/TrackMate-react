@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export function Footer() {
     return (
-        <footer>
+        <footer className='main-footer'>
             <div className="links">
                 <div className="social-media">
                     <ul className="list-media">

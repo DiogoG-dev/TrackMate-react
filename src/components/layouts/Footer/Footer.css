@@ -1,6 +1,6 @@
 /* Rodapé da Página */
 /* Footer */
-footer {
+.main-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@ footer {
 }
 
 /* Links Container */
-footer .links {
+.main-footer .links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,7 +56,7 @@ hr {
 }
 
 /* Container de Direitos e Bandeiras */
-footer .rights-flags {
+.main-footer .rights-flags {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -83,7 +83,7 @@ footer .rights-flags {
 
 /* Responsividade Mobile */
 @media (max-width: 768px) {
-    footer {
+    .main-footer {
         padding: 75px 0 25px 0;
     }
 
@@ -99,7 +99,7 @@ footer .rights-flags {
         display: none;
     }
 
-    footer .rights-flags {
+    .main-footer .rights-flags {
         flex-direction: column-reverse;
         margin-top: 50px;
         width: 85%;

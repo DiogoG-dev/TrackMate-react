@@ -32,7 +32,7 @@ export function Header() {
     })
 
     return (
-        <header id='main-header'>
+        <header className='main-header' id='main-header'>
             <nav className="nav-container">
                 <Link to={'/'} className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></Link>
                 <div className="nav-contents">
