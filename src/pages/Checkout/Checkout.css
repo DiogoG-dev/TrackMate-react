@@ -1,0 +1,81 @@
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 150px;
+    background-color: var(--bg-color-1);
+}
+
+.checkout-container .checkout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    border-radius: 10px;
+    padding: 30px 0;
+    background-color: var(--bg-color-3);
+}
+
+.checkout-content .checkout-flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.checkout-flow-container .payment-center-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.payment-center-title h2 {
+    font-size: 26px;
+    color: var(--color-1);
+}
+
+.checkout-flow-container .checkout-flow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.checkout-flow .flow {
+    color: var(--color-1);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Flows Contents */
+.checkout-content .checkout-flow-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+    border-top: 2px dotted var(--color-3);
+}
+
+.checkout-flow-contents .payment-method-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    width: 100%;
+}
+
+.payment-method-container h3 {
+    font-size: 20px;
+    color: var(--color-1);
+}
+
+.payment-method-container .payments {
+    width: 500px;
+    height: 100px;
+    background-color: var(--bg-color-10);
+}

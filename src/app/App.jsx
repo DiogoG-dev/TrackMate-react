@@ -8,6 +8,7 @@ import { PrivacyPolicy } from '../pages/PrivacyPolicy/PrivacyPolicy.jsx';
 import { Faq } from '../pages/Faq/Faq.jsx';
 import { ProductPage } from '../pages/ProductPage/ProductPage.jsx';
 import { Bag } from '../pages/Bag/Bag.jsx';
+import { Checkout } from '../pages/Checkout/Checkout.jsx';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/faq' element={<Faq />} />
         <Route path='/productPage' element={<ProductPage />} />
         <Route path='/bag' element={<Bag />} />
+        <Route path='/checkout' element={<Checkout />} />
       </Routes>
     </>
   )
