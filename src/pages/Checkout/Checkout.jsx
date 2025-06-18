@@ -1,10 +1,12 @@
 import './Checkout.css';
-import { Footer } from '../../components/layouts/Footer/Footer.jsx';
+import { Link } from 'react-router-dom';
 
 export function Checkout() {
     return (
         <>
-            <header className='header-checkout-container'></header>
+            <header className='header-checkout-container'>
+                <Link to={'/'} className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></Link>
+            </header>
             <main className='checkout-container'>
                 <div className="checkout-content">
                     <div className="checkout-flow-container">
