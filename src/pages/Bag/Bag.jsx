@@ -70,12 +70,12 @@ export function Bag() {
                         <h2 className='title'>Resumo do Pedido</h2>
                         <div className="subtotal">
                             <h3>Subtotal</h3>
-                            <span className="subtotal-value">R$ {totalValue.toFixed(2)}</span>
+                            <span className="subtotal-value">R$ {(totalValue || 0).toFixed(2)}</span>
                         </div>
                         <h3 className='estimated-delivery'>Estimar Entrega</h3>
                         <div className='total-container'>
                             <h2>Total</h2>
-                            <span className="total-value">R$ {totalValue.toFixed(2)}</span>
+                            <span className="total-value">R$ {(totalValue || 0).toFixed(2)}</span>
                         </div>
                         <button className='pay-button' onClick={handlerClick}>Pagar Agora</button>
                         <span className='secure-checkout'><i className="fa-solid fa-lock"></i>Checkout Seguro</span>
