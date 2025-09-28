@@ -2,7 +2,8 @@ import './Bag.css';
 import { Header } from '../../components/layouts/Header/Header.jsx';
 import { Footer } from '../../components/layouts/Footer/Footer.jsx';
 import { Item } from '../../components/common/Item/Item.jsx';
-import { useEffect, useState } from 'react';
+import { Check } from '../../components/common/Check/Check.jsx';
+import { use, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export function Bag() {
@@ -31,6 +32,18 @@ export function Bag() {
         setTotalValue(total)
     }, [])
 
+    const [isOverlayActive, setOverlayActive] = useState(false)
+
+    const handlerClick = () => {
+        setOverlayActive(true)
+
+        setTimeout(() => {
+            setOverlayActive(false);
+
+            localStorage.clear()
+            window.location.reload()
+        }, 3000);
+    }
     return (
         <>
             <Header />
@@ -64,7 +77,7 @@ export function Bag() {
                             <h2>Total</h2>
                             <span className="total-value">R$ {totalValue.toFixed(2)}</span>
                         </div>
-                        <Link to="/pageNotFound" className='pay-button'>Pagar Agora</Link>
+                        <button className='pay-button' onClick={handlerClick}>Pagar Agora</button>
                         <span className='secure-checkout'><i className="fa-solid fa-lock"></i>Checkout Seguro</span>
                     </div>
                 </div>
@@ -76,6 +89,7 @@ export function Bag() {
                     </div>
                 </div>
             </div>
+            <Check isActive={isOverlayActive}/>
             <Footer />
         </>
     );
