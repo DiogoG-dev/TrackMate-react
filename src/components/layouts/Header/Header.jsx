@@ -50,7 +50,7 @@ export function Header() {
 
             <div className="nav-responsive">
                 <div className="login-content">
-                    <Link to={'/pageNotFound'} className="login"><i className="fa-solid fa-user"></i>Login</Link>
+                    <Link to={'/login'} className="login"><i className="fa-solid fa-user"></i>Login</Link>
                 </div>
                 <Link to={'/faq'} className="faq">FAQ</Link>
                 <BuyButton />

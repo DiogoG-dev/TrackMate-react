@@ -17,10 +17,10 @@ export function Login() {
                         <button className='sing-up'>Cadastrar-se</button>
                     </div>
                     <div className="social-media">
-                        <a href="https://github.com/DiogoG-dev" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/diogogabriel-developer/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="mailto:diogogabriel.tech@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google"></i></a>
-                        <a href="https://diogog-dev.github.io/Portifolio/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-address-card"></i></a>
+                        <a href="https://github.com/DiogoG-dev" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/diogogabriel-developer/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:diogogabriel.tech@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-google"></i></a>
+                        <a href="https://diogog-dev.github.io/Portifolio/" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-address-card"></i></a>
                     </div>
                 </div>
                 <div className="start-trackmate">
@@ -29,7 +29,7 @@ export function Login() {
                     <img src="/TrackMate-react/imgs/bracelets/braceleteBranco.png" alt="" />
                     <Link to={'/#'}>
                         <div className="view-bracelet">
-                            <i class="fa-solid fa-eye"></i>
+                            <i className="fa-solid fa-eye"></i>
                         </div>
                     </Link>
                 </div>

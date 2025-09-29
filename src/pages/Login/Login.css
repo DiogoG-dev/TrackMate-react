@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: url('/TrackMate-react/imgs/backgrounds/backgroundLogin.jpg');
     background-position: center;
     background-size: cover;
@@ -17,13 +17,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 950px;
-    height: 600px;
 }
 
 .login-container .login-content {
-    width: 50%;
-    height: 100%;
+    width: 475px;
+    height: 600px;
     background-color: var(--bg-color-3);
 }
 
@@ -111,12 +109,6 @@
 }
 
 
-.start-trackmate {
-    width: 50%;
-    height: 100%;
-    background-color: var(--bg-color-4);
-}
-
 .login-content .social-media {
     display: flex;
     flex-direction: row;
@@ -137,10 +129,14 @@
     transition: 0.3s ease;
 }
 
+
 .start-trackmate {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 475px;
+    height: 600px;
+    background-color: var(--bg-color-4);
 }
 
 .start-trackmate h1 {
@@ -193,5 +189,74 @@
 
     .fa-eye {
         color: var(--color-2);
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+    }
+
+    .login-container .login-content {
+        width: 350px;
+        height: 500px;
+    }
+
+    .login-content h1 {
+        font-size: 38px;
+        margin: 30px 30px 0 30px;
+    }   
+
+    .login-form {
+        margin: 15px 30px 15px 30px;
+    }
+
+    .login-form input {
+        margin: 20px 0;
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+
+    .enter {
+        width: 115px;
+        height: 45px;
+        margin: 0 0 0 30px;
+    }
+
+    .sing-up {
+        width: 115px;
+        height: 45px;
+        margin: 0 30px 0 0;
+    }
+
+    .login-content .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 290px;
+        margin: 30px 30px 0 30px;
+    }
+
+    .start-trackmate {
+        width: 350px;
+        height: 600px;
+    }
+
+    .start-trackmate h1 {
+        margin: 30px 0 0 0;
+        font-size: 30px;
+    }
+
+    .start-trackmate span {
+        font-weight: 500;
+        margin: 0 30px 0 30px;
+        text-align: center;
+    }
+
+    .start-trackmate img {
+        width: 375px;
+        height: 375px;
+        animation: upDown 5s ease-in-out infinite;
     }
 }
