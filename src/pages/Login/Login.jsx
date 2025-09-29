@@ -14,7 +14,7 @@ export function Login() {
                     </form>
                     <div className="buttons">
                         <button className='enter'>Entrar</button>
-                        <button className='sing-up'>Cadastra-se</button>
+                        <button className='sing-up'>Cadastrar-se</button>
                     </div>
                     <div className="social-media">
                         <a href="https://github.com/DiogoG-dev" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
@@ -27,9 +27,11 @@ export function Login() {
                     <h1>TrackMate 0.4 XE</h1>
                     <span>O smartwatch que motiva você em cada passo.</span>
                     <img src="/TrackMate-react/imgs/bracelets/braceleteBranco.png" alt="" />
-                    <div className="view-bracelet">
-                        <Link to={'/#'}><i class="fa-solid fa-eye"></i></Link>
-                    </div>
+                    <Link to={'/#'}>
+                        <div className="view-bracelet">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
