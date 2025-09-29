@@ -1,7 +1,18 @@
+import { useState } from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
 
 export function Login() {
+    const [showPassword, setShowPassword] = useState(false)
+    const [messageErro, setMessageErro] = useState('');
+
+    function handlerClickErro(msg) {
+        if (msg === 1) {
+            setMessageErro('Email ou senha incorretos.');
+        } else if (msg === 2) {
+            setMessageErro('Não estamos aceitando novos cadastros no momento.');
+        }
+    }
 
     return (
         <div className="body-login">
@@ -10,12 +21,16 @@ export function Login() {
                     <h1>Olá,<br/>bem vindo!</h1>
                     <form action="" className='login-form'>
                         <input type="email" id='email' placeholder='Email'/>
-                        <input type="password" id='password' placeholder='Senha'/>
+                        <div className="showPasswordInput">
+                            <input type={showPassword ? "text" : "password"} id='password' placeholder='Senha'/>
+                            <i className="fa-solid fa-eye" onClick={() => setShowPassword(!showPassword)}></i>
+                        </div>
                     </form>
                     <div className="buttons">
-                        <button className='enter'>Entrar</button>
-                        <button className='sing-up'>Cadastrar-se</button>
+                        <button className='enter' onClick={() => handlerClickErro(1)}>Entrar</button>
+                        <button className='sing-up'onClick={() => handlerClickErro(2)}>Cadastrar-se</button>
                     </div>
+                    {messageErro && <span className="span-erro">{messageErro}</span>}
                     <div className="social-media">
                         <a href="https://github.com/DiogoG-dev" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/diogogabriel-developer/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>

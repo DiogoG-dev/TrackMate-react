@@ -66,6 +66,21 @@
     color: var(--color-3);
 }
 
+.showPasswordInput {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.showPasswordInput .fa-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--color-3);
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -108,13 +123,22 @@
     transition: 0s;
 }
 
+.span-erro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    margin: 10px 50px 0 50px;
+}
+
 
 .login-content .social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 375px;
-    margin: 50px 50px 0 50px;
+    margin: 35px 50px 0 50px;
 }
 
 .login-content .social-media .fa-brands, .login-content .social-media .fa-solid {
