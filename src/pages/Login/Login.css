@@ -21,7 +21,7 @@
     height: 600px;
 }
 
-.login-content {
+.login-container .login-content {
     width: 50%;
     height: 100%;
     background-color: var(--bg-color-3);
@@ -117,7 +117,7 @@
     background-color: var(--bg-color-4);
 }
 
-.social-media {
+.login-content .social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;
