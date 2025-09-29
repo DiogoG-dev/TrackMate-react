@@ -9,6 +9,7 @@ import { Faq } from '../pages/Faq/Faq.jsx';
 import { ProductPage } from '../pages/ProductPage/ProductPage.jsx';
 import { Bag } from '../pages/Bag/Bag.jsx';
 import { Checkout } from '../pages/Checkout/Checkout.jsx';
+import { Login } from '../pages/Login/Login.jsx';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/productPage' element={<ProductPage />} />
         <Route path='/bag' element={<Bag />} />
         <Route path='/checkout' element={<Checkout />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </>
   )

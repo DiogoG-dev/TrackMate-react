@@ -37,7 +37,7 @@ export function Header() {
                 <Link to={'/'} className="logo"><div className="outer-circle"><div className="inner-circle"></div></div><span>TrackMate</span></Link>
                 <div className="nav-contents">
                     <Link to={'/faq'} className="faq">FAQ</Link>
-                    <Link to={'/pageNotFound'} className="login"><i className="fa-solid fa-user"></i>Login</Link>
+                    <Link to={'/login'} className="login"><i className="fa-solid fa-user"></i>Login</Link>
                     <Link to={'/bag'} className="bag"><i className="fa-solid fa-bag-shopping"></i></Link>
                     <BuyButton />
                     <div className="menu-hamburguer">
